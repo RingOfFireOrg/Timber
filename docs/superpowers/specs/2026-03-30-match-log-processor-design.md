@@ -93,7 +93,7 @@ Before processing, the tool checks `dest_dir` for files starting with the match 
 |-------|------|------|-------------|
 | Timestamp high | 8 | int64 | LabView seconds |
 | Timestamp low | 8 | uint64 | LabView fractional |
-| Text length | 4 | int32 | Byte length of text payload (includes any leading length/type byte) |
+| Text length | 4 | int32 | Byte length of text payload |
 | Text data | variable | UTF-8 | Event message |
 
 **LabView timestamp to Unix time:** `unix_time = -2082826800 + seconds + fractional / 2^64`
@@ -108,7 +108,9 @@ A single event record's text payload may contain one of the following:
 
 3. **Info records** — Contain DS version and event name: `Info <version>Info FMS Event Name: <event_code>`. Also contains joystick info: `Info Joystick <N>: (<Name>)<axes> axes, <buttons> buttons, <povs> POVs.` (multiple joysticks concatenated in a single record, may be duplicated).
 
-4. **Tagged events** — A single text payload may contain multiple `<TagVersion>` entries concatenated together. Each `<TagVersion>` entry is treated as an individual event for filtering and display purposes. Two sub-formats:
+4. **Warning records** — Distinct from tagged events. Format: `Warning <Code> NNNNN <secondsSinceReboot> SSS.SSS\r<Description>Message text.` Tags are `<Code>`, `<secondsSinceReboot>`, `<Description>` — completely different from the `<TagVersion>` structure. These contain FRC system warnings (e.g., `FRC: Time since robot boot.`).
+
+5. **Tagged events** — A single text payload may contain multiple `<TagVersion>` entries concatenated together. Each `<TagVersion>` entry is treated as an individual event for filtering and display purposes. Two sub-formats:
    - Message: `<TagVersion>1 <time> SS.SSS <message> ...`
    - Coded event: `<TagVersion>1 <time> SS.SSS <count> N <flags> F <Code> C <details> ... <location> ... <stack> ...`
 
@@ -127,6 +129,18 @@ Capture groups: (1) match type, (2) match number, (3) replay number, (4) field t
 **Event name:** Match `Info FMS Event Name:\s*(\w+)` within the text payload.
 
 **Joystick config:** Match all occurrences of `Info Joystick (\d+): \(([^)]+)\)(\d+) axes, (\d+) buttons, (\d+) POVs\.` and deduplicate by joystick number (keep first occurrence).
+
+### Parsing Warning Records
+
+Regex pattern:
+
+```
+Warning <Code> (\d+) <secondsSinceReboot> ([\d.]+)(?:\r)?<Description>(.+)
+```
+
+Capture groups: (1) warning code, (2) seconds since reboot, (3) description text.
+
+Formatted as `WARNING (<code>): <description>`. The `<secondsSinceReboot>` value is not used for display — event timestamp comes from the record header like all other events.
 
 ## Match Events File Format
 
@@ -175,6 +189,7 @@ Field Time is displayed as-is from the FMS string (e.g., `26/3/29 13:35:4`). No 
 
 - FMS Connected/Disconnected — plain text starting with `FMS Connected:`
 - Code Start Notification — plain text `Code Start Notification.`
+- Warning records — `Warning <Code> ... <Description> ...` format, always included
 - Warnings and errors — tagged events with `<flags>` value 1 (warning) or 2 (error), or non-zero `<Code>`
 - Comms lost/restored — Code `44004` (`FRC: The Driver Station has lost communication with the robot.`)
 - Phoenix Signal Logger messages — tagged events where `<details>` starts with `[phoenix] Signal Logger`

@@ -106,15 +106,16 @@ def tmp_dirs(tmp_path):
 def sample_match_dsevents():
     """Return bytes for a .dsevents file representing a real FRC match."""
     return make_dsevents_file([
-        "\x00#Info 26.0Info FMS Event Name: NCPEM",
-        "nInfo Joystick 0: (Controller (Xbox One For Windows))6 axes, 16 buttons, 1 POVs. "
+        "Info 26.0Info FMS Event Name: NCPEM",
+        "Info Joystick 0: (Controller (Xbox One For Windows))6 axes, 16 buttons, 1 POVs. "
         "Info Joystick 1: (Controller (Gamepad F310))6 axes, 10 buttons, 1 POVs. ",
-        "hFMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4\n"
+        "FMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4\n"
         " -- FRC Driver Station - Version 26.0",
         "Code Start Notification. ",
         "<TagVersion>1 <time> 00.000 <count> 1 <flags> 2 <Code> 44000 "
         "<details> Driver Station not keeping up with protocol rates "
         "<location> Driver Station <stack> ",
+        "Warning <Code> 44007 <secondsSinceReboot> 116.460\r<Description>FRC: Time since robot boot.",
     ])
 
 
@@ -122,8 +123,8 @@ def sample_match_dsevents():
 def sample_nonmatch_dsevents():
     """Return bytes for a .dsevents file that is NOT a real match (None type)."""
     return make_dsevents_file([
-        "\x00#Info 26.0Info FMS Event Name: NCPEM",
-        "hFMS Connected:   None - 0:0, Field Time: -100/0/0 0:0:0\n"
+        "Info 26.0Info FMS Event Name: NCPEM",
+        "FMS Connected:   None - 0:0, Field Time: -100/0/0 0:0:0\n"
         " -- FRC Driver Station - Version 26.0",
     ])
 ```
@@ -267,15 +268,7 @@ def parse_dsevents_file(data):
         text_bytes = data[offset : offset + text_len]
         offset += text_len
 
-        # Strip leading non-printable bytes (length/type prefix in some records)
         text = text_bytes.decode("utf-8", errors="replace")
-        # Remove leading control characters
-        text = text.lstrip("\x00\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0b\x0c\x0e\x0f"
-                           "\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f")
-        # Some records have a leading length byte followed by content — skip any
-        # remaining non-ASCII prefix characters
-        while text and ord(text[0]) < 32:
-            text = text[1:]
 
         events.append({
             "timestamp": labview_to_unix(ts_sec, ts_frac),
@@ -329,7 +322,7 @@ from conftest import make_dsevents_file, make_dsevents_header
 def test_extract_fms_info_qualification():
     from match_identifier import extract_fms_info
     events = [
-        {"text": '#Info 26.0Info FMS Event Name: NCPEM'},
+        {"text": 'Info 26.0Info FMS Event Name: NCPEM'},
         {"text": 'FMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4\n -- FRC Driver Station - Version 26.0'},
     ]
     info = extract_fms_info(events)
@@ -662,6 +655,23 @@ def test_should_not_exclude_real_events():
     assert should_exclude("WARNING (44000): Driver Station not keeping up") is False
 
 
+def test_parse_warning_event():
+    from event_formatter import parse_warning_event
+    text = "Warning <Code> 44007 <secondsSinceReboot> 116.460\r<Description>FRC: Time since robot boot."
+    result = parse_warning_event(text, "116.460")
+    assert result is not None
+    assert result["code"] == 44007
+    assert "WARNING (44007)" in result["display"]
+    assert "FRC: Time since robot boot" in result["display"]
+
+
+def test_parse_warning_event_not_warning():
+    from event_formatter import parse_warning_event
+    text = "FMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4"
+    result = parse_warning_event(text)
+    assert result is None
+
+
 def test_collapse_repeats_no_repeats():
     from event_formatter import collapse_repeats
     events = [
@@ -738,6 +748,11 @@ TAG_CODED_PATTERN = re.compile(
     r"<details>\s*(.*?)\s*<location>\s*(.*?)\s*<stack>\s*(.*)"
 )
 
+# Parse a Warning record (distinct from TagVersion events)
+WARNING_RECORD_PATTERN = re.compile(
+    r"Warning <Code> (\d+) <secondsSinceReboot> ([\d.]+)(?:\r)?<Description>(.+)"
+)
+
 # Patterns for events to exclude
 EXCLUDE_PATTERNS = [
     re.compile(r"disabledPeriodic\(\):"),
@@ -800,6 +815,20 @@ def format_plain_event(text, relative_time="00.000"):
         if pattern.search(text):
             return {"time": relative_time, "display": display_name}
     return None
+
+
+def parse_warning_event(text, relative_time="00.000"):
+    """Try to parse a Warning record. Returns dict or None if not a Warning record.
+
+    Warning records have the format:
+        Warning <Code> NNNNN <secondsSinceReboot> SSS.SSS\r<Description>Message text.
+    """
+    m = WARNING_RECORD_PATTERN.match(text)
+    if not m:
+        return None
+    code = int(m.group(1))
+    description = m.group(3).strip().rstrip(".")
+    return {"time": relative_time, "display": f"WARNING ({code}): {description}", "code": code}
 
 
 def parse_tagged_events(text):
@@ -874,7 +903,7 @@ def format_events(parsed_data):
 
         # Compute relative time from file start
         rel_seconds = event["timestamp"] - header_ts
-        rel_time = f"{abs(rel_seconds):06.3f}"
+        rel_time = f"{abs(rel_seconds):07.3f}"
         if rel_seconds < 0:
             rel_time = f"-{rel_time}"
 
@@ -882,6 +911,12 @@ def format_events(parsed_data):
         plain = format_plain_event(text, rel_time)
         if plain is not None:
             formatted.append(plain)
+            continue
+
+        # Try Warning records
+        warning = parse_warning_event(text, rel_time)
+        if warning is not None:
+            formatted.append(warning)
             continue
 
         # Try tagged events
@@ -1170,9 +1205,9 @@ def test_scan_finds_match_files(tmp_dirs):
 
     # Create a match dsevents + dslog pair
     match_data = make_dsevents_file([
-        "\x00#Info 26.0Info FMS Event Name: NCPEM",
-        "nInfo Joystick 0: (Controller (Xbox One For Windows))6 axes, 16 buttons, 1 POVs. ",
-        "hFMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4\n"
+        "Info 26.0Info FMS Event Name: NCPEM",
+        "Info Joystick 0: (Controller (Xbox One For Windows))6 axes, 16 buttons, 1 POVs. ",
+        "FMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4\n"
         " -- FRC Driver Station - Version 26.0",
         "Code Start Notification. ",
     ])
@@ -1181,14 +1216,14 @@ def test_scan_finds_match_files(tmp_dirs):
 
     # Create a non-match dsevents + dslog pair
     nonmatch_data = make_dsevents_file([
-        "hFMS Connected:   None - 0:0, Field Time: -100/0/0 0:0:0\n"
+        "FMS Connected:   None - 0:0, Field Time: -100/0/0 0:0:0\n"
         " -- FRC Driver Station - Version 26.0",
     ])
     (src / "2026_03_29 10_00_00 Sun.dsevents").write_bytes(nonmatch_data)
     (src / "2026_03_29 10_00_00 Sun.dslog").write_bytes(b"\x00" * 100)
 
-    from process_matches import scan_and_identify
-    matches = scan_and_identify(str(src), str(dst))
+    from process_matches import find_dsevents_files, scan_and_identify
+    matches = scan_and_identify(find_dsevents_files(str(src)), str(dst))
     assert len(matches) == 1
     key = list(matches.keys())[0]
     assert "Qualification" in key
@@ -1198,7 +1233,7 @@ def test_skip_existing_matches(tmp_dirs):
     src, dst = tmp_dirs
 
     match_data = make_dsevents_file([
-        "hFMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4\n"
+        "FMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4\n"
         " -- FRC Driver Station - Version 26.0",
     ])
     (src / "2026_03_29 09_34_29 Sun.dsevents").write_bytes(match_data)
@@ -1207,8 +1242,8 @@ def test_skip_existing_matches(tmp_dirs):
     # Pre-populate destination with Q52_ files
     (dst / "Q52_match_events.txt").write_text("existing")
 
-    from process_matches import scan_and_identify
-    matches = scan_and_identify(str(src), str(dst))
+    from process_matches import find_dsevents_files, scan_and_identify
+    matches = scan_and_identify(find_dsevents_files(str(src)), str(dst))
     assert len(matches) == 0
 
 
@@ -1216,7 +1251,7 @@ def test_date_filter(tmp_dirs):
     src, dst = tmp_dirs
 
     match_data = make_dsevents_file([
-        "hFMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4\n"
+        "FMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4\n"
         " -- FRC Driver Station - Version 26.0",
     ])
     (src / "2026_03_29 09_34_29 Sun.dsevents").write_bytes(match_data)
@@ -1225,8 +1260,8 @@ def test_date_filter(tmp_dirs):
     (src / "2026_03_28 09_34_29 Sat.dsevents").write_bytes(match_data)
     (src / "2026_03_28 09_34_29 Sat.dslog").write_bytes(b"\x00" * 100)
 
-    from process_matches import scan_and_identify
-    matches = scan_and_identify(str(src), str(dst), date_filter="2026_03_29")
+    from process_matches import find_dsevents_files, scan_and_identify
+    matches = scan_and_identify(find_dsevents_files(str(src), date_filter="2026_03_29"), str(dst))
     assert len(matches) == 1
 
 
@@ -1245,8 +1280,8 @@ def test_end_to_end_with_real_files(tmp_path):
     dst = tmp_path / "dest"
     dst.mkdir()
 
-    from process_matches import scan_and_identify
-    matches = scan_and_identify("2026/03", str(dst))
+    from process_matches import find_dsevents_files, scan_and_identify
+    matches = scan_and_identify(find_dsevents_files("2026/03"), str(dst))
 
     # Should find multiple real matches
     assert len(matches) > 0
@@ -1333,13 +1368,15 @@ def has_dslog_pair(dsevents_path):
     return os.path.exists(base + ".dslog")
 
 
-def scan_and_identify(source_dir, dest_dir, date_filter=None):
-    """Scan source for match files, filter, group, and remove already-processed.
+def scan_and_identify(dsevents_files, dest_dir):
+    """Parse match files, filter, group, and remove already-processed.
+
+    Args:
+        dsevents_files: list of .dsevents file paths (from find_dsevents_files)
+        dest_dir: destination directory to check for existing matches
 
     Returns dict mapping match_key -> list of file info dicts.
     """
-    dsevents_files = find_dsevents_files(source_dir, date_filter)
-
     if not dsevents_files:
         return {}
 
@@ -1473,7 +1510,7 @@ def main():
         print("No .dsevents files found.")
         sys.exit(0)
 
-    matches = scan_and_identify(args.source_dir, args.dest_dir, date_filter)
+    matches = scan_and_identify(dsevents_files, args.dest_dir)
 
     if not matches:
         print("No new matches found.")
@@ -1534,14 +1571,14 @@ def test_missing_dslog_warns(tmp_dirs, capsys):
     src, dst = tmp_dirs
 
     match_data = make_dsevents_file([
-        "hFMS Connected:   Qualification - 99:1, Field Time: 26/3/29 13:35:4\n"
+        "FMS Connected:   Qualification - 99:1, Field Time: 26/3/29 13:35:4\n"
         " -- FRC Driver Station - Version 26.0",
     ])
     (src / "2026_03_29 12_00_00 Sun.dsevents").write_bytes(match_data)
     # Intentionally no .dslog file
 
-    from process_matches import scan_and_identify
-    matches = scan_and_identify(str(src), str(dst))
+    from process_matches import find_dsevents_files, scan_and_identify
+    matches = scan_and_identify(find_dsevents_files(str(src)), str(dst))
     assert len(matches) == 0
 
     captured = capsys.readouterr()
@@ -1554,11 +1591,11 @@ def test_restart_detection(tmp_dirs):
 
     # Two files for the same match (robot restart)
     match_data_1 = make_dsevents_file([
-        "hFMS Connected:   Qualification - 60:1, Field Time: 26/3/29 14:00:0\n"
+        "FMS Connected:   Qualification - 60:1, Field Time: 26/3/29 14:00:0\n"
         " -- FRC Driver Station - Version 26.0",
     ], unix_timestamp=1000.0)
     match_data_2 = make_dsevents_file([
-        "hFMS Connected:   Qualification - 60:1, Field Time: 26/3/29 14:00:0\n"
+        "FMS Connected:   Qualification - 60:1, Field Time: 26/3/29 14:00:0\n"
         " -- FRC Driver Station - Version 26.0",
     ], unix_timestamp=2000.0)
 
@@ -1567,8 +1604,8 @@ def test_restart_detection(tmp_dirs):
     (src / "2026_03_29 09_40_12 Sun.dsevents").write_bytes(match_data_2)
     (src / "2026_03_29 09_40_12 Sun.dslog").write_bytes(b"\x00" * 100)
 
-    from process_matches import scan_and_identify
-    matches = scan_and_identify(str(src), str(dst))
+    from process_matches import find_dsevents_files, scan_and_identify
+    matches = scan_and_identify(find_dsevents_files(str(src)), str(dst))
     assert len(matches) == 1
     key = list(matches.keys())[0]
     assert len(matches[key]) == 2  # Two files grouped together
@@ -1578,14 +1615,14 @@ def test_nonstandard_filename_skipped_with_date_filter(tmp_dirs):
     src, dst = tmp_dirs
 
     match_data = make_dsevents_file([
-        "hFMS Connected:   Qualification - 10:1, Field Time: 26/3/29 10:00:0\n"
+        "FMS Connected:   Qualification - 10:1, Field Time: 26/3/29 10:00:0\n"
         " -- FRC Driver Station - Version 26.0",
     ])
     (src / "weird_name.dsevents").write_bytes(match_data)
     (src / "weird_name.dslog").write_bytes(b"\x00" * 100)
 
-    from process_matches import scan_and_identify
-    matches = scan_and_identify(str(src), str(dst), date_filter="2026_03_29")
+    from process_matches import find_dsevents_files, scan_and_identify
+    matches = scan_and_identify(find_dsevents_files(str(src), date_filter="2026_03_29"), str(dst))
     assert len(matches) == 0
 ```
 
