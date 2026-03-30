@@ -1,0 +1,300 @@
+Match: Qualification 25
+Event: None
+Field Time: 26/3/28 19:30:45
+DS Version: FRC Driver Station - Version 26.0
+Replay: 1
+
+Log Files:
+  [1] 2026_03_28 15_30_12 Sat (Q25_1_)
+
+Events:
+  [1] 000.000  FMS Connected
+  [1] 00.000  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 139.650  Code Start Notification
+  [1] 139.657  Code Start Notification (repeated 1x)
+  [1] 00.042  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 00.037  INFO (1): Loop time of 0.02s overrun
+  [1] -00.000  [phoenix] Signal Logger: Available disk space (85 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] -00.437  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] -01.030  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] -01.031  INFO (1): Loop time of 0.02s overrun
+  [1] -01.543  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] -01.543  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] -02.296  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] -02.297  INFO (1): Loop time of 0.02s overrun
+  [1] -02.441  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000111s
+  [1] -02.457  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] -02.493  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] -02.494  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] -02.497  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] -02.498  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] -02.498  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] -02.499  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] -02.640  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] -02.641  INFO (1): Loop time of 0.02s overrun
+  [1] -03.414  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] -03.414  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] -04.458  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] -08.480  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out (repeated 2x)
+  [1] -10.504  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Frame Mgr: Period Status 0: HAL: CAN Receive has Timed Out
+  [1] -12.517  WARNING (5): [Spark Max] IDs: 43, Unable to retrieve SPARK firmware version. Please verify the deviceID field matches the configured CAN ID of the controller, and that the controller is connected to the CAN Bus.
+  [1] -12.518  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] -13.090  Warning at com.revrobotics.spark.SparkMax.<init>(SparkMax.java:80): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
+  [1] -13.090  INFO (1): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
+  [1] -14.535  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] -16.272  Warning at com.revrobotics.spark.SparkMax.<init>(SparkMax.java:80): CANSparkMax object created for CAN ID 8, which is not a SPARK MAX. Some functionalities may not work.
+  [1] -16.272  INFO (1): CANSparkMax object created for CAN ID 8, which is not a SPARK MAX. Some functionalities may not work.
+  [1] -16.549  WARNING (5): [Spark Max] IDs: 8, Unable to retrieve SPARK firmware version. Please verify the deviceID field matches the configured CAN ID of the controller, and that the controller is connected to the CAN Bus.
+  [1] -16.549  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] -22.255  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
+  [1] -22.255  WARNING (1): [AdvantageKit] Failed to open output log file.
+  [1] 00.000  ERROR (44003): FRC: No robot code is currently running.
+  [1] 00.000  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 00.669  [phoenix] Signal Logger Started (Network: EA381A4E394C4853202020500F0F18FF)
+  [1] 00.665  [phoenix] Signal Logger Started (Network: rio)
+  [1] 00.458  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 00.458  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 01.475  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
+  [1] 01.476  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 01.567  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 02.489  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 02.529  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 02.527  INFO (1): Loop time of 0.02s overrun
+  [1] 02.521  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 02.519  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 02.518  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 02.516  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 02.515  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 02.513  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 02.490  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 03.235  [phoenix] Signal Logger: Available disk space (85 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 03.408  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000018s
+  [1] 03.491  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 03.490  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 03.571  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 04.487  INFO (1): Loop time of 0.02s overrun
+  [1] 04.526  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 04.526  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 04.489  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 05.530  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 05.531  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 05.581  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 06.239  [phoenix] Signal Logger: Available disk space (85 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 06.533  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 06.534  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 07.535  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 07.519  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 07.519  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 07.517  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 07.517  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 07.516  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 07.515  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 07.535  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 07.783  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 08.536  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 08.537  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 09.248  [phoenix] Signal Logger: Available disk space (85 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 09.541  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 09.542  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 09.785  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 11.561  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 11.562  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 11.785  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 12.262  [phoenix] Signal Logger: Available disk space (85 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 12.337  INFO (1): Loop time of 0.02s overrun
+  [1] 12.339  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 12.520  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 12.561  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 12.528  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 12.526  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 12.525  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 12.523  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 12.521  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 12.561  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 13.577  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 13.578  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 13.791  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 14.584  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 14.584  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 15.268  [phoenix] Signal Logger: Available disk space (84 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 15.585  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 15.586  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 15.793  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 16.585  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 16.586  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 17.529  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 17.535  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 17.533  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 17.533  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 17.531  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 17.531  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 17.588  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 17.587  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 17.811  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 18.271  [phoenix] Signal Logger: Available disk space (84 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 18.606  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 18.607  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 19.626  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 19.627  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 19.816  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 20.646  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 20.646  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 21.283  [phoenix] Signal Logger: Available disk space (84 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 21.646  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 21.647  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 21.839  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 22.529  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 22.535  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 22.534  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 22.534  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 22.531  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 22.531  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 22.649  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 22.650  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 23.649  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 23.650  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 23.842  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 24.286  [phoenix] Signal Logger: Available disk space (84 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 24.651  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 24.652  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 25.865  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 26.651  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 26.654  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 27.293  [phoenix] Signal Logger: Available disk space (83 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 27.531  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 27.535  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 27.534  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 27.533  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 27.532  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 27.532  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 27.671  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 27.672  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 28.077  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 28.691  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 28.692  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 29.718  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 29.719  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 30.099  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 30.299  [phoenix] Signal Logger: Available disk space (83 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 30.731  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 30.732  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 31.751  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 31.752  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 32.124  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 32.551  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 32.556  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 32.555  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 32.554  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 32.553  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 32.552  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 32.771  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 32.772  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 33.306  [phoenix] Signal Logger: Available disk space (83 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 33.791  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 33.792  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 34.149  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 34.811  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 34.813  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 35.831  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 35.832  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 36.169  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Frame Mgr: Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 36.312  [phoenix] Signal Logger: Available disk space (83 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 36.831  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 36.832  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 37.571  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 37.575  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 37.574  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 37.574  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 37.572  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 37.572  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 37.851  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 37.852  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 38.188  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 38.858  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 38.859  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 39.323  [phoenix] Signal Logger: Available disk space (83 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 39.860  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 39.861  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 40.210  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 40.879  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 40.881  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 42.231  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 42.323  [phoenix] Signal Logger: Available disk space (82 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 42.578  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 42.583  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 42.582  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 42.582  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 42.579  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 42.579  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 42.899  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 42.899  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 43.901  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 43.902  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 44.251  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 44.901  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 44.903  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 45.333  [phoenix] Signal Logger: Available disk space (82 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 46.268  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 46.921  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 46.922  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 47.581  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 47.588  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 47.585  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 47.585  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 47.583  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 47.583  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 47.941  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 47.941  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 48.276  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 48.341  [phoenix] Signal Logger: Available disk space (82 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 48.941  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 48.942  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 49.961  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 49.961  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 50.297  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Frame Mgr: Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 50.981  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 50.982  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 51.347  [phoenix] Signal Logger: Available disk space (82 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 52.001  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 52.004  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 52.314  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 52.581  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 52.603  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 52.601  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 52.583  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 52.582  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 52.581  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 53.003  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 53.004  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 54.004  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 54.005  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 54.334  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 54.355  [phoenix] Signal Logger: Available disk space (81 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 55.024  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 55.023  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 56.023  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
+  [1] 56.023  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 56.358  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 57.363  [phoenix] Signal Logger: Available disk space (81 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 57.583  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 57.604  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 57.603  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 57.586  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 57.585  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 57.584  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 58.043  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 58.044  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 58.364  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 59.054  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 59.053  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 00.000  ERROR (44000): ipconfig /release
+  [1] 00.000  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 00.000  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 00.000  ERROR (44005): FMS Disconnect
+
+Joysticks:
+  0: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  1: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  2: Controller (Gamepad F310) - 0 axes, 0 buttons, 0 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV

@@ -1,0 +1,183 @@
+Match: Qualification 30
+Event: None
+Field Time: 26/3/28 20:18:15
+DS Version: FRC Driver Station - Version 26.0
+Replay: 1
+
+Log Files:
+  [1] 2026_03_28 16_17_43 Sat (Q30_1_)
+
+Events:
+  [1] 000.000  FMS Connected
+  [1] 00.000  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 00.000  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-GOOD,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 194.913  Code Start Notification
+  [1] 194.914  Code Start Notification (repeated 2x)
+  [1] 00.000  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 00.846  [phoenix] Signal Logger Started (Network: EA381A4E394C4853202020500F0F18FF)
+  [1] 00.845  [phoenix] Signal Logger Started (Network: rio)
+  [1] 00.642  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] -00.000  [phoenix] Signal Logger: Available disk space (63 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] -01.360  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Frame Mgr: Period Status 0: HAL: CAN Receive has Timed Out
+  [1] -03.372  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] -05.383  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Frame Mgr: Period Status 0: HAL: CAN Receive has Timed Out
+  [1] -07.398  WARNING (5): [Spark Max] IDs: 43, Unable to retrieve SPARK firmware version. Please verify the deviceID field matches the configured CAN ID of the controller, and that the controller is connected to the CAN Bus.
+  [1] -07.399  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] -08.709  Warning at com.revrobotics.spark.SparkMax.<init>(SparkMax.java:80): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
+  [1] -08.710  INFO (1): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
+  [1] -09.414  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Frame Mgr: Period Status 0: HAL: CAN Receive has Timed Out
+  [1] -11.166  Warning at com.revrobotics.spark.SparkMax.<init>(SparkMax.java:80): CANSparkMax object created for CAN ID 8, which is not a SPARK MAX. Some functionalities may not work.
+  [1] -11.169  INFO (1): CANSparkMax object created for CAN ID 8, which is not a SPARK MAX. Some functionalities may not work.
+  [1] -11.433  WARNING (5): [Spark Max] IDs: 8, Unable to retrieve SPARK firmware version. Please verify the deviceID field matches the configured CAN ID of the controller, and that the controller is connected to the CAN Bus.
+  [1] -11.433  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] -16.641  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
+  [1] -16.642  WARNING (1): [AdvantageKit] Failed to open output log file.
+  [1] 00.000  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 04.676  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 03.833  [phoenix] Signal Logger: Available disk space (62 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 02.658  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 06.667  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] 06.692  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 06.667  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] 06.834  [phoenix] Signal Logger: Available disk space (62 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 00.000  ERROR (44003): FRC: No robot code is currently running.
+  [1] 07.524  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 07.523  INFO (1): Loop time of 0.02s overrun
+  [1] 07.652  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 07.659  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 07.659  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 07.656  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 07.655  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 07.654  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 07.721  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000093s
+  [1] 07.806  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 07.805  INFO (1): Loop time of 0.02s overrun
+  [1] 08.697  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 08.822  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 08.821  INFO (1): Loop time of 0.02s overrun
+  [1] 09.846  [phoenix] Signal Logger: Available disk space (62 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 09.879  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 09.877  INFO (1): Loop time of 0.02s overrun
+  [1] 10.698  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 10.962  INFO (1): Loop time of 0.02s overrun
+  [1] 10.963  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 11.997  INFO (1): Loop time of 0.02s overrun
+  [1] 11.999  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 12.661  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 12.666  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 12.665  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 12.665  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 12.663  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 12.662  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 12.716  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 12.835  INFO (1): Loop time of 0.02s overrun
+  [1] 12.858  [phoenix] Signal Logger: Available disk space (62 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 12.836  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 14.721  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Frame Mgr: Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 15.862  [phoenix] Signal Logger: Available disk space (62 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 16.727  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Frame Mgr: Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 17.681  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 17.686  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 17.685  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 17.683  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 17.682  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 17.681  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 18.874  [phoenix] Signal Logger: Available disk space (61 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 19.121  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 21.144  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 21.876  [phoenix] Signal Logger: Available disk space (61 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 22.680  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 22.720  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 22.719  INFO (1): Loop time of 0.02s overrun
+  [1] 22.707  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 22.704  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 22.684  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 22.682  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 22.681  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 23.177  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 24.885  [phoenix] Signal Logger: Available disk space (61 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 25.202  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 27.226  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out (repeated 1x)
+  [1] 27.699  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 27.720  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 27.719  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 27.703  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 27.702  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 27.700  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 27.778  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 27.777  INFO (1): Loop time of 0.02s overrun
+  [1] 27.894  [phoenix] Signal Logger: Available disk space (61 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 29.240  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 30.893  [phoenix] Signal Logger: Available disk space (60 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 31.242  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 32.713  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 32.741  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 32.740  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 32.715  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 32.715  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 32.714  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 33.284  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 33.893  [phoenix] Signal Logger: Available disk space (60 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 35.308  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 36.905  [phoenix] Signal Logger: Available disk space (60 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 37.310  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 37.715  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 37.757  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 37.756  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 37.721  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 37.718  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 37.716  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 39.324  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 39.919  [phoenix] Signal Logger: Available disk space (60 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 41.327  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 42.735  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 42.758  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 42.756  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 42.738  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 42.737  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 42.737  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 42.928  [phoenix] Signal Logger: Available disk space (60 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 43.346  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 45.371  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 45.929  [phoenix] Signal Logger: Available disk space (59 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 47.395  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 47.738  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 47.760  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 47.759  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 47.742  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 47.740  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 47.739  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 48.938  [phoenix] Signal Logger: Available disk space (59 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 49.420  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 51.438  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out (repeated 1x)
+  [1] 51.942  [phoenix] Signal Logger: Available disk space (59 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 52.739  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 52.764  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 52.763  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 52.740  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 52.740  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 52.739  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 53.461  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 54.945  [phoenix] Signal Logger: Available disk space (59 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 55.483  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 57.503  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out (repeated 1x)
+  [1] 57.743  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 57.766  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 57.765  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 57.746  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 57.744  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 57.744  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 57.950  [phoenix] Signal Logger: Available disk space (58 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 59.505  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 00.000  ERROR (44000): FMS Auto Stop
+  [1] 00.000  ERROR (44000): ipconfig /release
+  [1] 00.000  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 00.000  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 00.000  ERROR (44005): FMS Disconnect
+
+Joysticks:
+  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
