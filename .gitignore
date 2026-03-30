@@ -1,2 +1,8 @@
 # Claude Code skills (local-only until validated)
 .claude/skills/
+
+# Python
+__pycache__/
+.venv/
+.python-version
+uv.lock
