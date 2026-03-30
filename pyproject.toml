@@ -1,0 +1,15 @@
+[project]
+name = "workspace"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.14"
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = [".", "match_processor"]
+testpaths = ["match_processor/tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
