@@ -143,7 +143,7 @@ Log Files:
 Events:
   [1] 00.000  FMS Connected
   [1] 00.000  Code Start Notification
-  [1] 00.000  WARNING (44000): Driver Station not keeping up with protocol rates
+  [1] 00.000  ERROR (44000): Driver Station not keeping up with protocol rates
   [1] 00.169  USB Camera 0: Attempting to connect on /dev/video0
   [1] 07.215  USB Camera 0: Attempting to connect on /dev/video0 (repeated 5x)
   [1] 25.402  WARNING (44007): FRC: Time since robot boot
