@@ -95,11 +95,11 @@ def parse_warning_event(text, relative_time="00.000"):
     return {"time": relative_time, "display": f"WARNING ({code}): {description}", "code": code}
 
 
-def parse_tagged_events(text):
+def parse_tagged_events(text, relative_time="00.000"):
     """Parse tagged events from a text payload.
 
     A single payload may contain multiple <TagVersion> entries.
-    Returns a list of formatted event dicts.
+    Returns a list of formatted event dicts using the record-level timestamp.
     """
     parts = TAG_SPLIT_PATTERN.split(text)
     results = []
@@ -112,7 +112,6 @@ def parse_tagged_events(text):
         # Try coded event first (more specific)
         m = TAG_CODED_PATTERN.match(part)
         if m:
-            time_str = m.group(1)
             flags = int(m.group(3))
             code = int(m.group(4))
             details = m.group(5).strip()
@@ -135,13 +134,12 @@ def parse_tagged_events(text):
             else:
                 display = details
 
-            results.append({"time": time_str, "display": display, "flags": flags, "code": code})
+            results.append({"time": relative_time, "display": display, "flags": flags, "code": code})
             continue
 
         # Try message event
         m = TAG_MESSAGE_PATTERN.match(part)
         if m:
-            time_str = m.group(1)
             message = m.group(2).strip()
 
             if not should_include_tagged(0, 0, None, message):
@@ -149,7 +147,7 @@ def parse_tagged_events(text):
             if should_exclude(message):
                 continue
 
-            results.append({"time": time_str, "display": message})
+            results.append({"time": relative_time, "display": message})
 
     return results
 
@@ -184,7 +182,7 @@ def format_events(parsed_data):
 
         # Try tagged events
         if "<TagVersion>" in text:
-            tagged = parse_tagged_events(text)
+            tagged = parse_tagged_events(text, rel_time)
             formatted.extend(tagged)
             continue
 

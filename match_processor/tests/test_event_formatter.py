@@ -1,9 +1,9 @@
 def test_parse_tagged_event_message_included():
     from event_formatter import parse_tagged_events
     text = "<TagVersion>1 <time> 00.169 <message> Warning at org.photonvision.PhotonCamera: PhotonVision coprocessor error "
-    events = parse_tagged_events(text)
+    events = parse_tagged_events(text, "05.200")
     assert len(events) == 1
-    assert events[0]["time"] == "00.169"
+    assert events[0]["time"] == "05.200"
     assert "PhotonVision" in events[0]["display"]
 
 

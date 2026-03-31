@@ -14,338 +14,338 @@ Log Files:
 
 Events:
   [1] 000.000  FMS Connected
-  [1] 00.000  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-bad FRC: Driver Station ping status has changed.
-  [1] 00.000  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
-  [1] 00.000  ERROR (44005): FMS Disconnect
+  [1] 000.420  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-bad FRC: Driver Station ping status has changed.
+  [1] 002.304  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 009.979  ERROR (44005): FMS Disconnect
   [2] 000.000  FMS Connected
   [2] 000.000  Code Start Notification
-  [2] 00.000  ERROR (44003): FRC: No robot code is currently running.
-  [2] 00.000  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
-  [2] -00.873  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
-  [2] -01.730  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000037s
-  [2] -01.874  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
-  [2] -02.166  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [2] -02.892  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
-  [2] -03.356  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [2] -04.498  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun (repeated 1x)
-  [2] -04.646  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000111s
-  [2] -04.686  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
-  [2] -04.687  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
-  [2] -04.696  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [2] -04.696  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [2] -04.720  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [2] -04.722  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [2] -04.722  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [2] -04.724  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [2] -04.741  WARNING (2): [Spark Flex] IDs: 20, [Spark Max] IDs: 50, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
-  [2] -04.871  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [2] -04.872  INFO (1): Loop time of 0.02s overrun
-  [2] -05.989  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
-  [2] -05.990  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
-  [2] -16.957  WARNING (5): [Spark Max] IDs: 43, Unable to retrieve SPARK firmware version. Please verify the deviceID field matches the configured CAN ID of the controller, and that the controller is connected to the CAN Bus.
-  [2] -16.957  WARNING (2): [Spark Max] IDs: 43, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
-  [2] -18.683  Warning at com.revrobotics.spark.SparkMax.<init>(SparkMax.java:80): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
-  [2] -18.684  INFO (1): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
-  [2] -18.973  WARNING (2): [Spark Max] IDs: 43, timed out while waiting for Get Firmware Version: HAL: CAN Receive has Timed Out
-  [2] -28.633  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
-  [2] -28.634  WARNING (1): [AdvantageKit] Failed to open output log file.
-  [2] 00.000  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
-  [2] 00.000  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
-  [2] 00.000  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
-  [2] 00.000  ERROR (44005): FMS Disconnect
+  [2] 000.206  ERROR (44003): FRC: No robot code is currently running.
+  [2] 000.352  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [2] 000.553  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 000.553  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000037s
+  [2] 000.553  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 000.553  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [2] 000.553  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 000.553  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [2] 000.553  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun (repeated 1x)
+  [2] 000.553  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000111s
+  [2] 000.553  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 000.553  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 000.553  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [2] 000.553  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [2] 000.553  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [2] 000.553  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [2] 000.553  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [2] 000.553  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [2] 000.553  WARNING (2): [Spark Flex] IDs: 20, [Spark Max] IDs: 50, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [2] 000.553  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [2] 000.553  INFO (1): Loop time of 0.02s overrun
+  [2] 000.553  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 000.553  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 000.553  WARNING (5): [Spark Max] IDs: 43, Unable to retrieve SPARK firmware version. Please verify the deviceID field matches the configured CAN ID of the controller, and that the controller is connected to the CAN Bus.
+  [2] 000.553  WARNING (2): [Spark Max] IDs: 43, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [2] 000.553  Warning at com.revrobotics.spark.SparkMax.<init>(SparkMax.java:80): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
+  [2] 000.553  INFO (1): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
+  [2] 000.553  WARNING (2): [Spark Max] IDs: 43, timed out while waiting for Get Firmware Version: HAL: CAN Receive has Timed Out
+  [2] 000.553  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
+  [2] 000.553  WARNING (1): [AdvantageKit] Failed to open output log file.
+  [2] 000.757  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [2] 002.360  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [2] 014.230  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [2] 015.034  ERROR (44005): FMS Disconnect
   [3] 000.000  FMS Connected
-  [3] 00.000  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
-  [3] -03.516  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -03.517  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -03.521  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -08.517  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -08.519  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -08.521  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -13.520  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -13.538  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -13.541  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -18.521  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -18.539  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -18.541  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -23.521  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -23.542  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -23.544  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -28.539  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -28.540  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -28.541  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -28.543  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -28.543  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -28.545  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -31.512  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] -33.563  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -33.564  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -33.565  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -33.566  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -33.567  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -33.568  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -34.515  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] -37.516  [phoenix] Signal Logger: Available disk space (80 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] -38.584  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -38.585  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -38.586  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -38.587  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -38.587  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -38.587  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -40.518  [phoenix] Signal Logger: Available disk space (80 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 00.000  ERROR (44003): FRC: No robot code is currently running.
+  [3] 001.861  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.434  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.434  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.434  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.434  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 010.434  [phoenix] Signal Logger: Available disk space (80 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.434  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.434  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.434  [phoenix] Signal Logger: Available disk space (80 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 010.434  ERROR (44003): FRC: No robot code is currently running.
   [3] 010.452  WARNING (44007): FRC: Time since robot boot
-  [3] -00.672  [phoenix] Signal Logger: Available disk space (77 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] -03.517  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -03.519  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -03.522  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -03.674  [phoenix] Signal Logger: Available disk space (77 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] -06.676  [phoenix] Signal Logger: Available disk space (77 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
-  [3] -08.518  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -08.521  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -08.522  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -10.475  [phoenix] Signal Logger: Available disk space (78 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] -13.482  [phoenix] Signal Logger: Available disk space (78 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
-  [3] -13.521  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -13.541  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -13.542  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -16.488  [phoenix] Signal Logger: Available disk space (78 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] -18.522  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -18.541  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -18.542  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -19.492  [phoenix] Signal Logger: Available disk space (78 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] -22.496  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] -23.522  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -23.543  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] -23.544  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] -25.500  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] -28.503  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
-  [3] 01.497  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 01.501  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 01.500  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 01.499  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 01.498  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 01.497  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 02.334  [phoenix] Signal Logger: Available disk space (77 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 05.338  [phoenix] Signal Logger: Available disk space (76 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 06.498  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 06.502  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 06.501  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 06.500  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 06.499  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 06.498  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 08.357  [phoenix] Signal Logger: Available disk space (76 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 11.359  [phoenix] Signal Logger: Available disk space (76 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
-  [3] 11.517  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 11.536  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [3] 11.534  INFO (1): Loop time of 0.02s overrun
-  [3] 11.525  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 11.523  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 11.522  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 11.520  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 11.519  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 14.368  [phoenix] Signal Logger: Available disk space (76 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 16.526  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 16.544  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [3] 16.543  INFO (1): Loop time of 0.02s overrun
-  [3] 16.531  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 16.530  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 16.530  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 16.528  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 16.527  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 17.379  [phoenix] Signal Logger: Available disk space (75 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 20.394  [phoenix] Signal Logger: Available disk space (75 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
-  [3] 21.534  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 21.539  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 21.538  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 21.538  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 21.536  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 21.535  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 23.406  [phoenix] Signal Logger: Available disk space (75 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 26.416  [phoenix] Signal Logger: Available disk space (75 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
-  [3] 26.535  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 26.553  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [3] 26.551  INFO (1): Loop time of 0.02s overrun
-  [3] 26.541  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 26.539  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 26.539  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 26.537  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 26.536  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 29.426  [phoenix] Signal Logger: Available disk space (74 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 31.539  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 31.545  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 31.544  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 31.543  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 31.541  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 31.541  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 32.429  [phoenix] Signal Logger: Available disk space (74 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 35.443  [phoenix] Signal Logger: Available disk space (74 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
-  [3] 36.558  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 36.563  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 36.563  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 36.560  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 36.560  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 36.559  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 38.451  [phoenix] Signal Logger: Available disk space (74 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 41.454  [phoenix] Signal Logger: Available disk space (73 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 41.561  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 41.566  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 41.565  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 41.565  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 41.562  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 41.562  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 44.468  [phoenix] Signal Logger: Available disk space (73 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 46.562  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 46.581  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [3] 46.580  INFO (1): Loop time of 0.02s overrun
-  [3] 46.567  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 46.566  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 46.564  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 46.564  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 46.563  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 47.471  [phoenix] Signal Logger: Available disk space (73 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 50.474  [phoenix] Signal Logger: Available disk space (73 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
-  [3] 50.485  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [3] 50.483  INFO (1): Loop time of 0.02s overrun
-  [3] 51.567  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 51.574  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 51.571  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 51.569  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 51.568  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 51.568  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 52.767  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [3] 52.766  INFO (1): Loop time of 0.02s overrun
-  [3] 53.476  [phoenix] Signal Logger: Available disk space (72 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 56.482  [phoenix] Signal Logger: Available disk space (72 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
-  [3] 56.567  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 56.576  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 56.572  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 56.571  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 56.569  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [3] 56.569  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [3] 59.497  [phoenix] Signal Logger: Available disk space (72 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [3] 00.000  ERROR (44000): FMS Auto Stop
-  [3] 00.000  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
-  [3] 00.000  ERROR (44000): Driver Station not keeping up with protocol rates
-  [3] 00.000  ERROR (44000): Driver Station not keeping up with protocol rates (repeated 12x)
-  [3] 00.000  ERROR (44005): FMS Disconnect
+  [3] 010.452  [phoenix] Signal Logger: Available disk space (77 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 010.452  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.452  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.452  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.452  [phoenix] Signal Logger: Available disk space (77 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 010.452  [phoenix] Signal Logger: Available disk space (77 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [3] 010.452  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.452  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.452  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.452  [phoenix] Signal Logger: Available disk space (78 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 010.452  [phoenix] Signal Logger: Available disk space (78 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [3] 010.452  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.452  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.452  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.452  [phoenix] Signal Logger: Available disk space (78 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 010.452  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.452  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.452  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.452  [phoenix] Signal Logger: Available disk space (78 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 010.452  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 010.452  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.452  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 010.452  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 010.452  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 010.452  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [3] 011.830  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 011.889  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 011.889  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 011.889  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 011.889  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 011.889  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 012.672  [phoenix] Signal Logger: Available disk space (77 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 015.673  [phoenix] Signal Logger: Available disk space (76 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 016.830  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 016.893  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 016.893  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 016.893  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 016.893  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 016.893  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 018.709  [phoenix] Signal Logger: Available disk space (76 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 021.690  [phoenix] Signal Logger: Available disk space (76 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [3] 021.848  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 021.888  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [3] 021.888  INFO (1): Loop time of 0.02s overrun
+  [3] 021.888  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 021.888  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 021.888  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 021.888  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 021.888  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 024.689  [phoenix] Signal Logger: Available disk space (76 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 026.849  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 026.891  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [3] 026.891  INFO (1): Loop time of 0.02s overrun
+  [3] 026.891  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 026.891  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 026.891  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 026.891  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 026.891  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 027.709  [phoenix] Signal Logger: Available disk space (75 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 030.730  [phoenix] Signal Logger: Available disk space (75 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [3] 031.868  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 031.912  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 031.912  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 031.912  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 031.912  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 031.912  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 033.729  [phoenix] Signal Logger: Available disk space (75 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 036.748  [phoenix] Signal Logger: Available disk space (75 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [3] 036.868  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 036.893  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [3] 036.893  INFO (1): Loop time of 0.02s overrun
+  [3] 036.893  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 036.893  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 036.893  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 036.893  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 036.893  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 039.755  [phoenix] Signal Logger: Available disk space (74 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 041.871  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 041.934  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 041.934  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 041.934  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 041.934  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 041.934  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 042.754  [phoenix] Signal Logger: Available disk space (74 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 045.793  [phoenix] Signal Logger: Available disk space (74 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [3] 046.891  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 046.969  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 046.969  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 046.969  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 046.969  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 046.969  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 048.769  [phoenix] Signal Logger: Available disk space (74 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 051.789  [phoenix] Signal Logger: Available disk space (73 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 051.890  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 051.950  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 051.950  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 051.950  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 051.950  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 051.950  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 054.789  [phoenix] Signal Logger: Available disk space (73 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 056.889  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 056.931  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [3] 056.931  INFO (1): Loop time of 0.02s overrun
+  [3] 056.931  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 056.931  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 056.931  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 056.931  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 056.931  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 057.809  [phoenix] Signal Logger: Available disk space (73 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 060.808  [phoenix] Signal Logger: Available disk space (73 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [3] 060.887  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [3] 060.887  INFO (1): Loop time of 0.02s overrun
+  [3] 061.896  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 061.969  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 061.969  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 061.969  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 061.969  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 061.969  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 063.149  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [3] 063.149  INFO (1): Loop time of 0.02s overrun
+  [3] 063.808  [phoenix] Signal Logger: Available disk space (72 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 066.808  [phoenix] Signal Logger: Available disk space (72 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [3] 066.889  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 066.953  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 066.953  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 066.953  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 066.953  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [3] 066.953  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [3] 069.829  [phoenix] Signal Logger: Available disk space (72 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 072.969  ERROR (44000): FMS Auto Stop
+  [3] 121.012  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [3] 122.613  ERROR (44000): Driver Station not keeping up with protocol rates
+  [3] 138.557  ERROR (44000): Driver Station not keeping up with protocol rates (repeated 12x)
+  [3] 141.430  ERROR (44005): FMS Disconnect
   [4] 000.000  FMS Connected
-  [4] 00.000  ERROR (44000): Driver Station not keeping up with protocol rates
-  [4] 00.000  ERROR (44000): Driver Station not keeping up with protocol rates (repeated 10x)
-  [4] 00.000  ERROR (44005): FMS Disconnect
+  [4] 000.834  ERROR (44000): Driver Station not keeping up with protocol rates
+  [4] 012.972  ERROR (44000): Driver Station not keeping up with protocol rates (repeated 10x)
+  [4] 015.846  ERROR (44005): FMS Disconnect
   [5] 000.000  FMS Connected
-  [5] 00.000  ERROR (44000): Driver Station not keeping up with protocol rates
-  [5] 00.000  ERROR (44000): Driver Station not keeping up with protocol rates (repeated 8x)
-  [5] 00.000  ERROR (44005): FMS Disconnect
+  [5] 000.419  ERROR (44000): Driver Station not keeping up with protocol rates
+  [5] 010.044  ERROR (44000): Driver Station not keeping up with protocol rates (repeated 8x)
+  [5] 013.559  ERROR (44005): FMS Disconnect
   [6] 000.000  FMS Connected
-  [6] 00.000  ERROR (44000): Driver Station not keeping up with protocol rates
-  [6] 00.000  ERROR (44000): Driver Station not keeping up with protocol rates (repeated 1x)
+  [6] 001.050  ERROR (44000): Driver Station not keeping up with protocol rates
+  [6] 002.135  ERROR (44000): Driver Station not keeping up with protocol rates (repeated 1x)
   [6] 002.393  Code Start Notification
   [6] 002.393  Code Start Notification (repeated 1x)
   [6] 002.589  WARNING (44007): FRC: Time since robot boot
-  [6] 00.023  [phoenix] Signal Logger Started (Network: rio)
-  [6] 00.001  [phoenix] Signal Logger Started (Network: EA381A4E394C4853202020500F0F18FF)
-  [6] -00.000  [phoenix] Signal Logger: Available disk space (96 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [6] -00.515  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
-  [6] -00.515  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
-  [6] -07.638  WARNING (2): [Spark Max] IDs: 43, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
-  [6] -09.356  Warning at com.revrobotics.spark.SparkMax.<init>(SparkMax.java:80): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
-  [6] -09.357  INFO (1): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
-  [6] -09.654  WARNING (5): [Spark Max] IDs: 43, Unable to retrieve SPARK firmware version. Please verify the deviceID field matches the configured CAN ID of the controller, and that the controller is connected to the CAN Bus.
-  [6] -09.655  WARNING (2): [Spark Max] IDs: 43, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
-  [6] -17.709  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
-  [6] -17.710  WARNING (1): [AdvantageKit] Failed to open output log file.
-  [6] 03.002  [phoenix] Signal Logger: Available disk space (95 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [6] 00.000  ERROR (44003): FRC: No robot code is currently running.
-  [6] 03.781  WARNING (2): [Spark Flex] IDs: 20, [Spark Max] IDs: 50, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
-  [6] 03.813  Warning at org.littletonrobotics.junction.LogTable.findRecordStructType(LogTable.java:851): [AdvantageKit] Logging record value with type "frc.robot.subsystems.vision.VisionIO$PoseObservation" for the first time. Logging a record type for the first time when the robot is enabled is likely to cause high loop overruns. Record types should be always logged for the first time when the robot is disabled.
-  [6] 03.813  INFO (1): [AdvantageKit] Logging record value with type "frc.robot.subsystems.vision.VisionIO$PoseObservation" for the first time. Logging a record type for the first time when the robot is enabled is likely to cause high loop overruns. Record types should be always logged for the first time when the robot is disabled.
-  [6] 03.810  Warning at org.littletonrobotics.junction.LogTable.findRecordStructType(LogTable.java:851): [AdvantageKit] Logging record value with type "frc.robot.subsystems.vision.VisionIO$TargetObservation" for the first time. Logging a record type for the first time when the robot is enabled is likely to cause high loop overruns. Record types should be always logged for the first time when the robot is disabled.
-  [6] 03.799  INFO (1): [AdvantageKit] Logging record value with type "frc.robot.subsystems.vision.VisionIO$TargetObservation" for the first time. Logging a record type for the first time when the robot is enabled is likely to cause high loop overruns. Record types should be always logged for the first time when the robot is disabled.
-  [6] 03.863  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 03.862  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [6] 03.849  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 03.838  INFO (1): Loop time of 0.02s overrun
-  [6] 03.825  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 03.824  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 03.823  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 03.822  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 04.185  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000037s
-  [6] 04.851  INFO (1): Loop time of 0.02s overrun
-  [6] 04.853  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [6] 05.874  INFO (1): Loop time of 0.02s overrun
-  [6] 05.875  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [6] 06.005  [phoenix] Signal Logger: Available disk space (95 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [6] 07.460  INFO (1): Loop time of 0.02s overrun
-  [6] 07.461  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [6] 09.007  [phoenix] Signal Logger: Available disk space (95 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [6] 09.230  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 09.244  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [6] 09.243  INFO (1): Loop time of 0.02s overrun
-  [6] 09.238  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 09.235  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 09.235  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 09.232  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 09.231  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 12.045  [phoenix] Signal Logger: Available disk space (95 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [6] 14.201  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [6] 14.199  INFO (1): Loop time of 0.02s overrun
-  [6] 14.727  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000037s
-  [6] 14.786  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 14.786  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 14.784  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 14.784  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 14.783  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 14.782  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 14.853  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [6] 14.851  INFO (1): Loop time of 0.02s overrun
-  [6] 15.048  [phoenix] Signal Logger: Available disk space (94 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [6] 17.323  INFO (1): Loop time of 0.02s overrun
-  [6] 17.324  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [6] 18.064  [phoenix] Signal Logger: Available disk space (94 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [6] 19.798  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 19.803  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 19.802  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 19.801  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 19.799  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 19.799  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 21.068  [phoenix] Signal Logger: Available disk space (94 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [6] 23.283  INFO (1): Loop time of 0.02s overrun
-  [6] 23.284  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [6] 24.079  [phoenix] Signal Logger: Available disk space (94 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [6] 24.801  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 24.807  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 24.806  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 24.805  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 24.802  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 24.802  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 27.081  [phoenix] Signal Logger: Available disk space (93 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [6] 27.304  WARNING (2): [Spark Max] IDs: 40, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
-  [6] 29.807  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 29.813  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 29.812  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 29.810  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 29.809  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 29.808  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 30.088  [phoenix] Signal Logger: Available disk space (93 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [6] 33.093  [phoenix] Signal Logger: Available disk space (93 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
-  [6] 34.808  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 34.825  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [6] 34.824  INFO (1): Loop time of 0.02s overrun
-  [6] 34.817  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 34.815  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 34.812  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 34.810  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 34.809  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 36.106  [phoenix] Signal Logger: Available disk space (93 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [6] 39.109  [phoenix] Signal Logger: Available disk space (92 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
-  [6] 39.821  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 39.827  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 39.827  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 39.824  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 39.824  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [6] 39.822  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [6] 00.000  ERROR (44000): ipconfig /release
-  [6] 00.000  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
-  [6] 00.000  ERROR (44005): FMS Disconnect
+  [6] 002.589  [phoenix] Signal Logger Started (Network: rio)
+  [6] 002.589  [phoenix] Signal Logger Started (Network: EA381A4E394C4853202020500F0F18FF)
+  [6] 002.589  [phoenix] Signal Logger: Available disk space (96 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 002.589  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [6] 002.589  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [6] 002.589  WARNING (2): [Spark Max] IDs: 43, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [6] 002.589  Warning at com.revrobotics.spark.SparkMax.<init>(SparkMax.java:80): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
+  [6] 002.589  INFO (1): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
+  [6] 002.589  WARNING (5): [Spark Max] IDs: 43, Unable to retrieve SPARK firmware version. Please verify the deviceID field matches the configured CAN ID of the controller, and that the controller is connected to the CAN Bus.
+  [6] 002.589  WARNING (2): [Spark Max] IDs: 43, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [6] 002.589  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
+  [6] 002.589  WARNING (1): [AdvantageKit] Failed to open output log file.
+  [6] 005.391  [phoenix] Signal Logger: Available disk space (95 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 006.033  ERROR (44003): FRC: No robot code is currently running.
+  [6] 006.175  WARNING (2): [Spark Flex] IDs: 20, [Spark Max] IDs: 50, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [6] 006.214  Warning at org.littletonrobotics.junction.LogTable.findRecordStructType(LogTable.java:851): [AdvantageKit] Logging record value with type "frc.robot.subsystems.vision.VisionIO$PoseObservation" for the first time. Logging a record type for the first time when the robot is enabled is likely to cause high loop overruns. Record types should be always logged for the first time when the robot is disabled.
+  [6] 006.214  INFO (1): [AdvantageKit] Logging record value with type "frc.robot.subsystems.vision.VisionIO$PoseObservation" for the first time. Logging a record type for the first time when the robot is enabled is likely to cause high loop overruns. Record types should be always logged for the first time when the robot is disabled.
+  [6] 006.214  Warning at org.littletonrobotics.junction.LogTable.findRecordStructType(LogTable.java:851): [AdvantageKit] Logging record value with type "frc.robot.subsystems.vision.VisionIO$TargetObservation" for the first time. Logging a record type for the first time when the robot is enabled is likely to cause high loop overruns. Record types should be always logged for the first time when the robot is disabled.
+  [6] 006.214  INFO (1): [AdvantageKit] Logging record value with type "frc.robot.subsystems.vision.VisionIO$TargetObservation" for the first time. Logging a record type for the first time when the robot is enabled is likely to cause high loop overruns. Record types should be always logged for the first time when the robot is disabled.
+  [6] 006.254  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 006.254  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [6] 006.254  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 006.254  INFO (1): Loop time of 0.02s overrun
+  [6] 006.254  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 006.254  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 006.254  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 006.254  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 006.591  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000037s
+  [6] 007.233  INFO (1): Loop time of 0.02s overrun
+  [6] 007.303  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [6] 008.248  INFO (1): Loop time of 0.02s overrun
+  [6] 008.308  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [6] 008.389  [phoenix] Signal Logger: Available disk space (95 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 009.851  INFO (1): Loop time of 0.02s overrun
+  [6] 009.890  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [6] 011.391  [phoenix] Signal Logger: Available disk space (95 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 011.599  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 011.660  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [6] 011.660  INFO (1): Loop time of 0.02s overrun
+  [6] 011.660  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 011.660  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 011.660  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 011.660  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 011.660  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 014.415  [phoenix] Signal Logger: Available disk space (95 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 016.650  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [6] 016.650  INFO (1): Loop time of 0.02s overrun
+  [6] 017.175  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000037s
+  [6] 017.213  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 017.213  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 017.213  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 017.213  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 017.213  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 017.213  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 017.243  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [6] 017.243  INFO (1): Loop time of 0.02s overrun
+  [6] 017.432  [phoenix] Signal Logger: Available disk space (94 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 019.710  INFO (1): Loop time of 0.02s overrun
+  [6] 019.749  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [6] 020.452  [phoenix] Signal Logger: Available disk space (94 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 022.169  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 022.232  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 022.232  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 022.232  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 022.232  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 022.232  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 023.453  [phoenix] Signal Logger: Available disk space (94 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 025.673  INFO (1): Loop time of 0.02s overrun
+  [6] 025.712  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [6] 026.456  [phoenix] Signal Logger: Available disk space (94 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 027.192  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 027.230  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 027.230  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 027.230  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 027.230  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 027.230  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 029.472  [phoenix] Signal Logger: Available disk space (93 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 029.689  WARNING (2): [Spark Max] IDs: 40, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [6] 032.197  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 032.254  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 032.254  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 032.254  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 032.254  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 032.254  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 032.470  [phoenix] Signal Logger: Available disk space (93 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 035.470  [phoenix] Signal Logger: Available disk space (93 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [6] 037.190  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 037.238  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [6] 037.238  INFO (1): Loop time of 0.02s overrun
+  [6] 037.238  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 037.238  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 037.238  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 037.238  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 037.238  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 038.489  [phoenix] Signal Logger: Available disk space (93 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 041.494  [phoenix] Signal Logger: Available disk space (92 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 042.197  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 042.250  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 042.250  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 042.250  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 042.250  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 042.250  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 044.035  ERROR (44000): ipconfig /release
+  [6] 044.474  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [6] 047.279  ERROR (44005): FMS Disconnect
 
 Joysticks:

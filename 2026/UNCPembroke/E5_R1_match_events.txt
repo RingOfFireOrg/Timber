@@ -9,7 +9,7 @@ Log Files:
 
 Events:
   [1] 000.000  FMS Connected
-  [1] 00.000  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
-  [1] 00.000  ERROR (44005): FMS Disconnect
+  [1] 003.568  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 257.180  ERROR (44005): FMS Disconnect
 
 Joysticks:

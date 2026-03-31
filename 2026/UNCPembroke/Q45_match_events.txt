@@ -9,202 +9,202 @@ Log Files:
 
 Events:
   [1] 000.000  FMS Connected
-  [1] 00.000  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 001.484  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
   [1] 193.016  Code Start Notification
   [1] 193.017  Code Start Notification (repeated 1x)
-  [1] 00.000  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-GOOD,  roboRIO(.2)-GOOD,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 193.153  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-GOOD,  roboRIO(.2)-GOOD,  FMS-GOOD FRC: Driver Station ping status has changed.
   [1] 193.354  WARNING (44007): FRC: Time since robot boot
-  [1] 00.015  [phoenix] Signal Logger Started (Network: rio)
-  [1] -00.000  [phoenix] Signal Logger Started (Network: EA381A4E394C4853202020500F0F18FF)
-  [1] -02.525  WARNING (2): [Spark Max] IDs: 43, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
-  [1] -04.568  Warning at com.revrobotics.spark.SparkMax.<init>(SparkMax.java:80): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
-  [1] -04.569  INFO (1): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
-  [1] -04.842  WARNING (5): [Spark Max] IDs: 43, Unable to retrieve SPARK firmware version. Please verify the deviceID field matches the configured CAN ID of the controller, and that the controller is connected to the CAN Bus.
-  [1] -04.842  WARNING (2): [Spark Max] IDs: 43, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
-  [1] -11.196  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
-  [1] -11.196  WARNING (1): [AdvantageKit] Failed to open output log file.
-  [1] 00.000  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
-  [1] 08.372  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
-  [1] 08.373  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
-  [1] 00.000  ERROR (44003): FRC: No robot code is currently running.
-  [1] 10.379  INFO (1): Loop time of 0.02s overrun
-  [1] 10.384  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [1] 10.497  WARNING (2): [Spark Flex] IDs: 20, [Spark Max] IDs: 50, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
-  [1] 10.875  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 10.923  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 10.921  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 10.920  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 10.909  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 10.909  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 10.879  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 10.877  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 10.961  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000093s
-  [1] 11.165  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [1] 11.164  INFO (1): Loop time of 0.02s overrun
-  [1] 12.178  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [1] 12.178  INFO (1): Loop time of 0.02s overrun
-  [1] 12.369  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 12.370  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 13.315  INFO (1): Loop time of 0.02s overrun
-  [1] 13.316  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [1] 13.381  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 13.380  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 14.389  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
-  [1] 14.390  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 14.627  INFO (1): Loop time of 0.02s overrun
-  [1] 14.629  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [1] 15.395  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 15.396  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 15.532  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 15.535  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 15.533  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 15.533  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 16.087  INFO (1): Loop time of 0.02s overrun
-  [1] 16.125  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 16.125  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 16.088  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [1] 16.541  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 16.542  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 17.296  INFO (1): Loop time of 0.02s overrun
-  [1] 17.298  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [1] 17.555  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 17.556  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 18.561  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 18.563  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 18.979  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [1] 18.978  INFO (1): Loop time of 0.02s overrun
-  [1] 19.586  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 19.587  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 20.547  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 20.551  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 20.549  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 20.549  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 20.598  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 20.596  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 21.139  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 21.141  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 21.599  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 21.600  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 22.599  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 22.600  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 23.603  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 23.603  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 24.604  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 24.605  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 25.568  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 25.608  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 25.607  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 25.570  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 25.569  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 25.569  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 26.149  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 26.150  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 26.608  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 26.609  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 27.609  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 27.610  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 28.620  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 28.621  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 29.624  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 29.625  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 30.584  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 30.601  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [1] 30.600  INFO (1): Loop time of 0.02s overrun
-  [1] 30.589  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 30.587  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 30.586  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 30.647  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 30.647  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 31.168  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 31.166  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 32.646  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 32.647  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 33.666  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 33.667  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 34.667  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 34.668  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 35.585  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 35.590  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 35.589  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 35.587  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 35.686  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 35.685  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 36.186  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 36.187  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 36.705  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 36.706  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 37.706  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 37.706  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 38.709  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 38.709  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 39.728  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 39.729  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 40.334  INFO (1): Loop time of 0.02s overrun
-  [1] 40.335  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
-  [1] 40.586  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 40.590  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 40.589  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 40.588  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 40.743  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 40.743  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 41.187  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 41.189  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 41.747  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 41.748  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 42.747  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 42.748  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 43.768  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 43.768  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 45.587  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 45.590  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 45.589  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 45.588  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 45.787  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 45.788  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 46.190  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 46.191  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 46.791  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 46.790  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 47.810  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
-  [1] 47.812  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 48.811  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
-  [1] 48.810  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 49.829  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
-  [1] 49.831  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 50.590  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 50.593  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 50.591  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 50.591  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 50.850  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 50.851  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 51.190  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 51.191  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 51.870  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 51.871  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 52.870  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 52.871  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 53.871  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 53.872  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 54.875  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 54.876  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 55.591  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 55.594  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 55.593  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 55.592  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
-  [1] 56.198  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 56.196  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
-  [1] 56.876  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 56.877  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 57.896  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 57.896  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 58.896  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 58.897  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 59.916  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 59.916  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
-  [1] 00.000  ERROR (44000): ipconfig /release
-  [1] 00.000  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
-  [1] 00.000  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
-  [1] 00.000  ERROR (44005): FMS Disconnect
+  [1] 193.354  [phoenix] Signal Logger Started (Network: rio)
+  [1] 193.354  [phoenix] Signal Logger Started (Network: EA381A4E394C4853202020500F0F18FF)
+  [1] 193.354  WARNING (2): [Spark Max] IDs: 43, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 193.354  Warning at com.revrobotics.spark.SparkMax.<init>(SparkMax.java:80): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
+  [1] 193.354  INFO (1): CANSparkMax object created for CAN ID 43, which is not a SPARK MAX. Some functionalities may not work.
+  [1] 193.354  WARNING (5): [Spark Max] IDs: 43, Unable to retrieve SPARK firmware version. Please verify the deviceID field matches the configured CAN ID of the controller, and that the controller is connected to the CAN Bus.
+  [1] 193.354  WARNING (2): [Spark Max] IDs: 43, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 193.354  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
+  [1] 193.354  WARNING (1): [AdvantageKit] Failed to open output log file.
+  [1] 193.554  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 201.392  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] 201.434  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] 203.375  ERROR (44003): FRC: No robot code is currently running.
+  [1] 203.397  INFO (1): Loop time of 0.02s overrun
+  [1] 203.471  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 203.538  WARNING (2): [Spark Flex] IDs: 20, [Spark Max] IDs: 50, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 203.916  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 203.975  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 203.975  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 203.975  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 203.975  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 203.975  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 203.975  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 203.975  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 203.991  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000093s
+  [1] 204.228  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 204.228  INFO (1): Loop time of 0.02s overrun
+  [1] 205.195  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 205.195  INFO (1): Loop time of 0.02s overrun
+  [1] 205.402  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 205.431  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 206.333  INFO (1): Loop time of 0.02s overrun
+  [1] 206.392  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 206.454  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 206.454  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 207.419  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
+  [1] 207.461  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 207.674  INFO (1): Loop time of 0.02s overrun
+  [1] 207.723  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 208.433  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 208.500  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 208.552  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 208.605  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 208.605  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 208.605  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 209.113  INFO (1): Loop time of 0.02s overrun
+  [1] 209.158  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 209.158  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 209.158  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 209.559  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 209.616  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 210.323  INFO (1): Loop time of 0.02s overrun
+  [1] 210.385  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 210.598  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 210.651  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 211.603  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 211.671  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 212.047  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 212.047  INFO (1): Loop time of 0.02s overrun
+  [1] 212.628  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 212.678  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 213.587  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 213.633  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 213.633  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 213.633  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 213.696  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 213.696  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 214.167  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 214.227  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 214.642  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 214.679  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 215.616  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 215.680  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 216.643  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 216.677  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 217.635  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 217.696  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 218.608  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 218.642  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 218.642  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 218.642  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 218.642  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 218.642  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 219.169  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 219.251  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 219.663  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 219.682  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 220.626  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 220.709  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 221.642  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 221.717  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 222.653  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 222.724  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 223.606  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 223.670  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 223.670  INFO (1): Loop time of 0.02s overrun
+  [1] 223.670  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 223.670  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 223.670  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 223.749  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 223.749  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 224.225  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 224.225  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 225.704  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 225.721  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 226.683  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 226.743  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 227.708  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 227.786  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 228.624  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 228.686  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 228.686  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 228.686  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 228.749  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 228.749  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 229.228  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 229.263  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 229.758  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 229.783  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 230.743  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 230.808  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 231.743  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 231.800  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 232.763  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 232.822  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 233.378  INFO (1): Loop time of 0.02s overrun
+  [1] 233.435  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 233.617  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 233.686  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 233.686  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 233.686  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 233.785  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 233.855  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 234.211  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 234.264  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 234.799  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 234.824  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 235.778  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 235.816  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 236.799  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 236.859  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 238.615  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 238.697  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 238.697  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 238.697  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 238.817  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 238.879  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 239.214  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 239.261  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 239.860  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 239.860  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 240.833  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
+  [1] 240.894  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 241.863  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
+  [1] 241.863  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 242.854  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
+  [1] 242.940  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 243.639  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 243.685  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 243.685  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 243.685  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 243.875  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 243.952  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 244.215  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 244.293  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 244.894  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 244.953  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 245.911  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 245.972  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 246.896  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 246.952  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 247.903  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 247.961  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 248.613  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 248.686  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 248.686  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 248.686  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 249.273  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 249.273  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 249.894  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 249.955  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 250.932  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 250.992  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 251.919  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 251.973  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 252.953  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 252.994  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 561.337  ERROR (44000): ipconfig /release
+  [1] 561.776  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 562.780  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 564.584  ERROR (44005): FMS Disconnect
 
 Joysticks:
   0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
