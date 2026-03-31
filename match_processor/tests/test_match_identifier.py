@@ -7,7 +7,6 @@ from conftest import make_dsevents_file, make_dsevents_header
 def test_extract_fms_info_qualification():
     from match_identifier import extract_fms_info
     events = [
-        {"text": 'Info 26.0Info FMS Event Name: NCPEM'},
         {"text": 'FMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4\n -- FRC Driver Station - Version 26.0'},
     ]
     info = extract_fms_info(events)
@@ -16,7 +15,6 @@ def test_extract_fms_info_qualification():
     assert info["replay"] == 1
     assert info["field_time"] == "26/3/29 13:35:4"
     assert info["ds_version"] == "FRC Driver Station - Version 26.0"
-    assert info["event_name"] == "NCPEM"
 
 
 def test_extract_fms_info_elimination():

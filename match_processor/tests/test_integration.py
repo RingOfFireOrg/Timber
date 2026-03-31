@@ -10,7 +10,6 @@ def test_scan_finds_match_files(tmp_dirs):
 
     # Create a match dsevents + dslog pair
     match_data = make_dsevents_file([
-        "Info 26.0Info FMS Event Name: NCPEM",
         "Info Joystick 0: (Controller (Xbox One For Windows))6 axes, 16 buttons, 1 POVs. ",
         "FMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4\n"
         " -- FRC Driver Station - Version 26.0",

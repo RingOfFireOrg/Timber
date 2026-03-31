@@ -4,12 +4,13 @@ import os
 import shutil
 
 
-def format_match_events_txt(fms_info, match_id, log_files, events_by_log, joysticks):
+def format_match_events_txt(fms_info, match_id, event_name, log_files, events_by_log, joysticks):
     """Generate the full match_events.txt content as a string.
 
     Args:
-        fms_info: dict with match_type, match_number, replay, field_time, ds_version, event_name
+        fms_info: dict with match_type, match_number, replay, field_time, ds_version
         match_id: str like 'Q52' or 'E6_R1'
+        event_name: str event code (e.g., 'NCPEM')
         log_files: list of dicts with seq and basename
         events_by_log: dict mapping seq number -> list of event dicts (time, display)
         joysticks: list of joystick dicts (number, name, axes, buttons, povs)
@@ -18,7 +19,7 @@ def format_match_events_txt(fms_info, match_id, log_files, events_by_log, joysti
 
     # Header
     lines.append(f"Match: {fms_info['match_type']} {fms_info['match_number']}")
-    lines.append(f"Event: {fms_info.get('event_name', 'Unknown')}")
+    lines.append(f"Event: {event_name}")
     lines.append(f"Field Time: {fms_info['field_time']}")
     lines.append(f"DS Version: {fms_info['ds_version']}")
     lines.append(f"Replay: {fms_info['replay']}")

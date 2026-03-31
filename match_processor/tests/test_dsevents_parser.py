@@ -61,8 +61,7 @@ def test_parse_real_fms_event(sample_match_dsevents):
     from dsevents_parser import parse_dsevents_file
     result = parse_dsevents_file(sample_match_dsevents)
     assert result["header"]["version"] == 4
-    assert len(result["events"]) == 6
+    assert len(result["events"]) == 5
     texts = [e["text"] for e in result["events"]]
     assert any("FMS Connected" in t for t in texts)
-    assert any("Info FMS Event Name" in t for t in texts)
     assert any("Warning <Code>" in t for t in texts)

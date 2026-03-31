@@ -46,7 +46,6 @@ def tmp_dirs(tmp_path):
 def sample_match_dsevents():
     """Return bytes for a .dsevents file representing a real FRC match."""
     return make_dsevents_file([
-        "Info 26.0Info FMS Event Name: NCPEM",
         "Info Joystick 0: (Controller (Xbox One For Windows))6 axes, 16 buttons, 1 POVs. "
         "Info Joystick 1: (Controller (Gamepad F310))6 axes, 10 buttons, 1 POVs. ",
         "FMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4\n"
@@ -63,7 +62,6 @@ def sample_match_dsevents():
 def sample_nonmatch_dsevents():
     """Return bytes for a .dsevents file that is NOT a real match (None type)."""
     return make_dsevents_file([
-        "Info 26.0Info FMS Event Name: NCPEM",
         "FMS Connected:   None - 0:0, Field Time: -100/0/0 0:0:0\n"
         " -- FRC Driver Station - Version 26.0",
     ])

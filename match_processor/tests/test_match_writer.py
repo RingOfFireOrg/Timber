@@ -11,14 +11,13 @@ def test_format_match_events_header():
         "replay": 1,
         "field_time": "26/3/29 13:35:4",
         "ds_version": "FRC Driver Station - Version 26.0",
-        "event_name": "NCPEM",
     }
     match_id = "Q52"
     log_files = [{"seq": 1, "basename": "2026_03_29 09_34_29 Sun"}]
     events_by_log = {1: [{"time": "00.000", "display": "FMS Connected"}]}
     joysticks = [{"number": 0, "name": "Controller (Xbox One For Windows)", "axes": 6, "buttons": 16, "povs": 1}]
 
-    txt = format_match_events_txt(fms_info, match_id, log_files, events_by_log, joysticks)
+    txt = format_match_events_txt(fms_info, match_id, "NCPEM", log_files, events_by_log, joysticks)
 
     assert "Match: Qualification 52" in txt
     assert "Event: NCPEM" in txt
@@ -38,7 +37,6 @@ def test_format_match_events_multi_log():
         "replay": 1,
         "field_time": "26/3/29 14:00:0",
         "ds_version": "FRC Driver Station - Version 26.0",
-        "event_name": "NCPEM",
     }
     match_id = "Q60"
     log_files = [
@@ -51,7 +49,7 @@ def test_format_match_events_multi_log():
     }
     joysticks = []
 
-    txt = format_match_events_txt(fms_info, match_id, log_files, events_by_log, joysticks)
+    txt = format_match_events_txt(fms_info, match_id, "NCPEM", log_files, events_by_log, joysticks)
 
     assert "[1]" in txt
     assert "[2]" in txt

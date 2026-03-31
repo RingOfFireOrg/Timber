@@ -6,7 +6,6 @@ FMS_PATTERN = re.compile(
     r"FMS Connected:\s+(\w+)\s*-\s*(\d+):(\d+),\s*Field Time:\s*(.+)\n\s*--\s*(.+)"
 )
 
-EVENT_NAME_PATTERN = re.compile(r"Info FMS Event Name:\s*(\w+)")
 
 JOYSTICK_PATTERN = re.compile(
     r"Info Joystick (\d+): \((.+?)\)(\d+) axes, (\d+) buttons, (\d+) POVs\."
@@ -20,36 +19,18 @@ def extract_fms_info(events):
     Returns a dict with match_type, match_number, replay, field_time,
     ds_version, event_name — or None if no FMS data found.
     """
-    fms_match = None
-    event_name = None
-
     for event in events:
-        text = event["text"]
+        m = FMS_PATTERN.search(event["text"])
+        if m:
+            return {
+                "match_type": m.group(1),
+                "match_number": int(m.group(2)),
+                "replay": int(m.group(3)),
+                "field_time": m.group(4).strip(),
+                "ds_version": m.group(5).strip(),
+            }
 
-        if fms_match is None:
-            m = FMS_PATTERN.search(text)
-            if m:
-                fms_match = m
-
-        if event_name is None:
-            m = EVENT_NAME_PATTERN.search(text)
-            if m:
-                event_name = m.group(1)
-
-        if fms_match and event_name:
-            break
-
-    if fms_match is None:
-        return None
-
-    return {
-        "match_type": fms_match.group(1),
-        "match_number": int(fms_match.group(2)),
-        "replay": int(fms_match.group(3)),
-        "field_time": fms_match.group(4).strip(),
-        "ds_version": fms_match.group(5).strip(),
-        "event_name": event_name,
-    }
+    return None
 
 
 def extract_joystick_info(events):
