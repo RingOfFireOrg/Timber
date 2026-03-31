@@ -151,3 +151,58 @@ def test_nonstandard_filename_skipped_with_date_filter(tmp_dirs):
     from process_matches import find_dsevents_files, scan_and_identify
     matches = scan_and_identify(find_dsevents_files(str(src), date_filter="2026_03_29"), str(dst))
     assert len(matches) == 0
+
+
+def test_non_participation_match_note(tmp_dirs):
+    src, dst = tmp_dirs
+
+    # FMS Connected but no Code Start Notification, no joysticks
+    match_data = make_dsevents_file([
+        "FMS Connected:   Elimination - 3:1, Field Time: 26/3/29 17:42:4\n"
+        " -- FRC Driver Station - Version 26.0",
+    ])
+    (src / "2026_03_29 13_41_30 Sun.dsevents").write_bytes(match_data)
+    (src / "2026_03_29 13_41_30 Sun.dslog").write_bytes(b"\x00" * 100)
+
+    from process_matches import find_dsevents_files, scan_and_identify, process_match
+    matches = scan_and_identify(find_dsevents_files(str(src)), str(dst))
+    assert len(matches) == 1
+    key = list(matches.keys())[0]
+    files = matches[key]
+    fms = files[0]["fms_info"]
+    from match_identifier import build_match_id
+    match_id = build_match_id(fms["match_type"], fms["match_number"], fms["replay"])
+
+    process_match(key, files, match_id, "2026ncpem", str(src), str(dst))
+
+    txt = (dst / f"{match_id}_match_events.txt").read_text()
+    assert "NOTE: The robot does not appear to have participated in this match." in txt
+    assert "The Blue Alliance: https://www.thebluealliance.com/match/2026ncpem_sf3m1" in txt
+
+
+def test_participation_match_has_tba_link_no_note(tmp_dirs):
+    src, dst = tmp_dirs
+
+    match_data = make_dsevents_file([
+        "Info Joystick 0: (Controller (Xbox One For Windows))6 axes, 16 buttons, 1 POVs. ",
+        "FMS Connected:   Qualification - 13:1, Field Time: 26/3/28 17:29:45\n"
+        " -- FRC Driver Station - Version 26.0",
+        "Code Start Notification. ",
+    ])
+    (src / "2026_03_28 13_29_12 Sat.dsevents").write_bytes(match_data)
+    (src / "2026_03_28 13_29_12 Sat.dslog").write_bytes(b"\x00" * 100)
+
+    from process_matches import find_dsevents_files, scan_and_identify, process_match
+    matches = scan_and_identify(find_dsevents_files(str(src)), str(dst))
+    assert len(matches) == 1
+    key = list(matches.keys())[0]
+    files = matches[key]
+    fms = files[0]["fms_info"]
+    from match_identifier import build_match_id
+    match_id = build_match_id(fms["match_type"], fms["match_number"], fms["replay"])
+
+    process_match(key, files, match_id, "2026ncpem", str(src), str(dst))
+
+    txt = (dst / f"{match_id}_match_events.txt").read_text()
+    assert "The Blue Alliance: https://www.thebluealliance.com/match/2026ncpem_qm13" in txt
+    assert "NOTE:" not in txt

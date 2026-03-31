@@ -4,13 +4,47 @@ import os
 import shutil
 
 
+TBA_BASE_URL = "https://www.thebluealliance.com/match"
+
+
+def build_tba_url(event_key, match_type, match_number, replay):
+    """Construct a The Blue Alliance match URL.
+
+    Args:
+        event_key: TBA event key (e.g., '2026ncpem')
+        match_type: 'Qualification' or 'Elimination'
+        match_number: match number from FMS
+        replay: replay number from FMS
+    """
+    if match_type == "Elimination":
+        return f"{TBA_BASE_URL}/{event_key}_sf{match_number}m{replay}"
+    return f"{TBA_BASE_URL}/{event_key}_qm{match_number}"
+
+
+def detect_non_participation(events_by_log, joysticks):
+    """Check if the robot participated in a match.
+
+    Returns True if BOTH conditions hold:
+    - No 'Code Start Notification' in any log's events
+    - No joystick info records (empty joysticks list)
+    """
+    if joysticks:
+        return False
+    for seq_events in events_by_log.values():
+        for event in seq_events:
+            if "Code Start Notification" in event["display"]:
+                return False
+    return True
+
+
 def format_match_events_txt(fms_info, match_id, event_name, log_files, events_by_log, joysticks):
     """Generate the full match_events.txt content as a string.
 
     Args:
         fms_info: dict with match_type, match_number, replay, field_time, ds_version
         match_id: str like 'Q52' or 'E6_R1'
-        event_name: str event code (e.g., 'NCPEM')
+        event_name: str TBA event key (e.g., '2026ncpem') — previously a display name,
+            now a TBA key used for both the Event: header line and TBA URL construction
         log_files: list of dicts with seq and basename
         events_by_log: dict mapping seq number -> list of event dicts (time, display)
         joysticks: list of joystick dicts (number, name, axes, buttons, povs)
@@ -23,7 +57,14 @@ def format_match_events_txt(fms_info, match_id, event_name, log_files, events_by
     lines.append(f"Field Time: {fms_info['field_time']}")
     lines.append(f"DS Version: {fms_info['ds_version']}")
     lines.append(f"Replay: {fms_info['replay']}")
+    tba_url = build_tba_url(event_name, fms_info["match_type"], fms_info["match_number"], fms_info["replay"])
+    lines.append(f"The Blue Alliance: {tba_url}")
     lines.append("")
+
+    # Non-participation note
+    if detect_non_participation(events_by_log, joysticks):
+        lines.append("NOTE: The robot does not appear to have participated in this match.")
+        lines.append("")
 
     # Log files
     lines.append("Log Files:")

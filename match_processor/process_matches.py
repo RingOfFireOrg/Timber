@@ -158,8 +158,12 @@ def process_match(key, files, match_id, event_name, source_dir, dest_dir):
         collapsed = collapse_repeats(formatted)
         events_by_log[seq] = collapsed
 
-    # Extract joystick info from first log file
-    joysticks = extract_joystick_info(files[0]["parsed"]["events"])
+    # Extract joystick info from all log files (may appear in any restart)
+    joysticks = []
+    for fi in files:
+        joysticks = extract_joystick_info(fi["parsed"]["events"])
+        if joysticks:
+            break
 
     # Generate match_events.txt
     txt = format_match_events_txt(fms_info, match_id, event_name, log_entries, events_by_log, joysticks)
@@ -180,7 +184,8 @@ def main():
     parser.add_argument("dest_dir", help="Destination directory for organized match files")
 
     parser.add_argument("--event", required=True,
-                        help="FRC event code (e.g., NCPEM)")
+                        help="The Blue Alliance event key (e.g., 2026ncpem). "
+                             "Find it at https://www.thebluealliance.com — the key is in the event URL.")
 
     date_group = parser.add_mutually_exclusive_group()
     date_group.add_argument("--today", action="store_true",

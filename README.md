@@ -9,19 +9,29 @@ Process FRC Driver Station log files (`.dsevents` and `.dslog`) from competition
 
 ```bash
 # Scan all files in source directory
-python3 match_processor/process_matches.py <source_dir> <dest_dir>
+uv run match_processor/process_matches.py <source_dir> <dest_dir> --event <tba_event_key>
 
 # Scan only today's files
-python3 match_processor/process_matches.py <source_dir> <dest_dir> --today
+uv run match_processor/process_matches.py <source_dir> <dest_dir> --event <tba_event_key> --today
 
 # Scan files for a specific date
-python3 match_processor/process_matches.py <source_dir> <dest_dir> --date 2026-03-29
+uv run match_processor/process_matches.py <source_dir> <dest_dir> --event <tba_event_key> --date 2026-03-29
 ```
+
+### Finding Your TBA Event Key
+
+The `--event` parameter takes a [The Blue Alliance](https://www.thebluealliance.com) event key. To find it:
+
+1. Go to [thebluealliance.com](https://www.thebluealliance.com)
+2. Search for your event or navigate via your team page
+3. The event key is in the URL: `https://www.thebluealliance.com/event/2026ncpem` → use `2026ncpem`
+
+The event key is used in the `Event:` line of match output files and to generate direct links to each match on The Blue Alliance.
 
 ### Example
 
 ```bash
-python3 match_processor/process_matches.py 2026/03/ 2026/UNCPembroke/
+uv run match_processor/process_matches.py 2026/03/ 2026/UNCPembroke/ --event 2026ncpem
 ```
 
 Output:
