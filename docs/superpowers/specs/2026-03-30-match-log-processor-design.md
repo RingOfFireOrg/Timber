@@ -1,5 +1,7 @@
 # FRC Match Log Processor — Design Spec
 
+**Status:** COMPLETE — Implemented 2026-03-30. Post-implementation changes: `--event` CLI parameter added (c63c62e), timestamp fix (28fe5c7).
+
 ## Overview
 
 A Python script (`process_matches.py`) that identifies FRC match log files (`.dsevents` and `.dslog`), extracts match information, writes a human-readable match events file, and copies everything to a designated match folder for committing to GitHub.
