@@ -1,8 +1,9 @@
 Match: Qualification 34
-Event: UNCPembroke
+Event: 2026ncpem
 Field Time: 26/3/28 21:1:37
 DS Version: FRC Driver Station - Version 26.0
 Replay: 1
+The Blue Alliance: https://www.thebluealliance.com/match/2026ncpem_qm34
 
 Log Files:
   [1] 2026_03_28 17_01_04 Sat (Q34_1_)
@@ -131,3 +132,8 @@ Events:
   [2] 345.241  ERROR (44005): FMS Disconnect
 
 Joysticks:
+  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV

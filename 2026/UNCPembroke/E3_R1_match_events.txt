@@ -1,8 +1,11 @@
 Match: Elimination 3
-Event: UNCPembroke
+Event: 2026ncpem
 Field Time: 26/3/29 17:42:4
 DS Version: FRC Driver Station - Version 26.0
 Replay: 1
+The Blue Alliance: https://www.thebluealliance.com/match/2026ncpem_sf3m1
+
+NOTE: The robot does not appear to have participated in this match.
 
 Log Files:
   [1] 2026_03_29 13_41_30 Sun (E3_R1_1_)

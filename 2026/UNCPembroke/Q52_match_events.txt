@@ -1,8 +1,9 @@
 Match: Qualification 52
-Event: UNCPembroke
+Event: 2026ncpem
 Field Time: 26/3/29 13:30:54
 DS Version: FRC Driver Station - Version 26.0
 Replay: 1
+The Blue Alliance: https://www.thebluealliance.com/match/2026ncpem_qm52
 
 Log Files:
   [1] 2026_03_29 09_30_20 Sun (Q52_1_)

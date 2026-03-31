@@ -1,8 +1,9 @@
 Match: Qualification 10
-Event: UNCPembroke
+Event: 2026ncpem
 Field Time: 26/3/28 16:27:49
 DS Version: FRC Driver Station - Version 26.0
 Replay: 1
+The Blue Alliance: https://www.thebluealliance.com/match/2026ncpem_qm10
 
 Log Files:
   [1] 2026_03_28 12_27_16 Sat (Q10_1_)
