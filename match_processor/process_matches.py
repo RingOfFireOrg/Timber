@@ -22,6 +22,8 @@ from match_writer import (
     copy_match_files,
     write_match_events_file,
 )
+from dslog_parser import parse_dslog_path
+from dslog_processor import detect_transitions, compute_telemetry
 
 
 def get_date_filter(args):
@@ -141,9 +143,10 @@ def process_match(key, files, match_id, event_name, source_dir, dest_dir):
     """Process a single match: parse events, write summary, copy files."""
     fms_info = files[0]["fms_info"]
 
-    # Build log file entries with sequence numbers
     log_entries = []
     events_by_log = {}
+    transition_events = {}
+    all_dslog_records = []
 
     for seq, fi in enumerate(files, start=1):
         basename = os.path.splitext(os.path.basename(fi["path"]))[0]
@@ -153,20 +156,36 @@ def process_match(key, files, match_id, event_name, source_dir, dest_dir):
             "dsevents_path": fi["path"],
         })
 
-        # Format and collapse events
+        # Format and collapse dsevents
         formatted = format_events(fi["parsed"])
         collapsed = collapse_repeats(formatted)
         events_by_log[seq] = collapsed
 
-    # Extract joystick info from all log files (may appear in any restart)
+        # Parse dslog
+        dslog_path = fi["path"].rsplit(".dsevents", 1)[0] + ".dslog"
+        if os.path.exists(dslog_path):
+            dslog_data = parse_dslog_path(dslog_path)
+            if dslog_data["records"]:
+                all_dslog_records.extend(dslog_data["records"])
+                transitions = detect_transitions(dslog_data["records"])
+                # Skip initial mode transition (record 0) — it's context, not an event
+                transition_events[seq] = [t for t in transitions[1:]]
+
+    # Extract joystick info
     joysticks = []
     for fi in files:
         joysticks = extract_joystick_info(fi["parsed"]["events"])
         if joysticks:
             break
 
+    # Compute telemetry across all logs
+    telemetry = compute_telemetry(all_dslog_records)
+
     # Generate match_events.txt
-    txt = format_match_events_txt(fms_info, match_id, event_name, log_entries, events_by_log, joysticks)
+    txt = format_match_events_txt(
+        fms_info, match_id, event_name, log_entries, events_by_log, joysticks,
+        telemetry=telemetry, transition_events=transition_events,
+    )
 
     # Write files
     write_match_events_file(dest_dir, match_id, txt)
