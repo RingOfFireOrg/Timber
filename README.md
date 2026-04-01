@@ -126,3 +126,39 @@ NOTE: The robot does not appear to have participated in this match.
 Telemetry:
   No telemetry data available.
 ```
+
+## Power Analyzer
+
+Analyzes `.dslog` files to find voltage dips (potential brownouts) and shows which motors were drawing the most current during each dip. Useful for figuring out which mechanisms are overloading your battery.
+
+### Usage
+
+```bash
+python3 power_analyzer/analyze_power.py <log_file> --profile <robot_profile.csv> [options]
+```
+
+| Option | Description |
+|--------|-------------|
+| `log_file` | Path to a `.dslog` or `.dsevents` file (the paired file is auto-detected) |
+| `--profile <path>` | **Required.** CSV file mapping PDH channels to motor descriptions |
+| `--voltage-threshold <V>` | Voltage below which a dip is reported (default: 10.0V) |
+| `--current-threshold <A>` | Minimum peak current to show in the table (default: 1.0A) |
+| `--output-dir <path>` | Output directory (default: same as input file) |
+
+### Robot Profile CSV
+
+Create a CSV file that maps your PDH channels to your robot's motors:
+
+```csv
+channel,can_id,description
+0,10,Front Left Drive NEO
+1,11,Front Left Turn NEO 550
+9,20,Climber NEO
+14,25,Shooter NEO
+```
+
+### Example
+
+```bash
+python3 power_analyzer/analyze_power.py "2026/03/2026_03_28 17_45_53 Sat.dslog" --profile robot.csv
+```
