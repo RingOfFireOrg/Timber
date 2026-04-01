@@ -1,6 +1,6 @@
 import os
 
-from conftest import make_dsevents_file
+from shared.tests.conftest import make_dsevents_file
 
 
 def test_format_match_events_header():

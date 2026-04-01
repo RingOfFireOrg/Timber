@@ -1,24 +1,24 @@
 import struct
 
-from conftest import make_dsevents_header, make_dsevents_file, make_event_record, LABVIEW_EPOCH_OFFSET
+from shared.tests.conftest import make_dsevents_header, make_dsevents_file, make_event_record, LABVIEW_EPOCH_OFFSET
 
 
 def test_parse_header_version():
-    from dsevents_parser import parse_header
+    from shared.dsevents_parser import parse_header
     data = make_dsevents_header(unix_timestamp=1000000.0, version=4)
     header = parse_header(data)
     assert header["version"] == 4
 
 
 def test_parse_header_timestamp():
-    from dsevents_parser import parse_header
+    from shared.dsevents_parser import parse_header
     data = make_dsevents_header(unix_timestamp=1000000.0, version=4)
     header = parse_header(data)
     assert abs(header["timestamp"] - 1000000.0) < 1.0
 
 
 def test_parse_events_single_record():
-    from dsevents_parser import parse_dsevents_file
+    from shared.dsevents_parser import parse_dsevents_file
     file_bytes = make_dsevents_file(["Hello world"])
     result = parse_dsevents_file(file_bytes)
     assert len(result["events"]) == 1
@@ -26,7 +26,7 @@ def test_parse_events_single_record():
 
 
 def test_parse_events_multiple_records():
-    from dsevents_parser import parse_dsevents_file
+    from shared.dsevents_parser import parse_dsevents_file
     file_bytes = make_dsevents_file(["First", "Second", "Third"])
     result = parse_dsevents_file(file_bytes)
     assert len(result["events"]) == 3
@@ -35,14 +35,14 @@ def test_parse_events_multiple_records():
 
 
 def test_parse_events_empty_file():
-    from dsevents_parser import parse_dsevents_file
+    from shared.dsevents_parser import parse_dsevents_file
     file_bytes = make_dsevents_header()  # header only, no events
     result = parse_dsevents_file(file_bytes)
     assert len(result["events"]) == 0
 
 
 def test_parse_truncated_file():
-    from dsevents_parser import parse_dsevents_file
+    from shared.dsevents_parser import parse_dsevents_file
     file_bytes = make_dsevents_file(["Hello world"])
     # Truncate mid-record
     truncated = file_bytes[:30]
@@ -51,14 +51,14 @@ def test_parse_truncated_file():
 
 
 def test_parse_header_too_short():
-    from dsevents_parser import parse_header
+    from shared.dsevents_parser import parse_header
     import pytest
     with pytest.raises(ValueError):
         parse_header(b"\x00" * 10)
 
 
 def test_parse_real_fms_event(sample_match_dsevents):
-    from dsevents_parser import parse_dsevents_file
+    from shared.dsevents_parser import parse_dsevents_file
     result = parse_dsevents_file(sample_match_dsevents)
     assert result["header"]["version"] == 4
     assert len(result["events"]) == 5

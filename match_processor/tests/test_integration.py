@@ -4,7 +4,7 @@ import sys
 
 import pytest
 
-from conftest import make_dsevents_file
+from shared.tests.conftest import make_dsevents_file
 
 
 def test_scan_finds_match_files(tmp_dirs):
@@ -72,9 +72,12 @@ def test_date_filter(tmp_dirs):
 
 
 def test_cli_help():
+    workspace = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) or "."
+    env = os.environ.copy()
+    env["PYTHONPATH"] = os.pathsep.join([workspace, os.path.join(workspace, "match_processor")])
     result = subprocess.run(
         [sys.executable, "match_processor/process_matches.py", "--help"],
-        capture_output=True, text=True, cwd=os.path.dirname(os.path.dirname(os.path.dirname(__file__))) or "."
+        capture_output=True, text=True, cwd=workspace, env=env,
     )
     assert result.returncode == 0
     assert "source_dir" in result.stdout
@@ -214,7 +217,7 @@ def test_real_dslog_produces_transitions(tmp_path):
     """Integration test: real dslog files produce debounced transitions."""
     import glob
 
-    from dslog_parser import parse_dslog_path
+    from shared.dslog_parser import parse_dslog_path
     from dslog_processor import detect_transitions
 
     # Use a known match dslog from the test data
@@ -237,7 +240,7 @@ def test_real_dslog_produces_telemetry(tmp_path):
     """Integration test: real dslog files produce telemetry summary."""
     import glob
 
-    from dslog_parser import parse_dslog_path
+    from shared.dslog_parser import parse_dslog_path
     from dslog_processor import compute_telemetry
 
     dslog_files = sorted(glob.glob("2026/UNCPembroke/Q39_1_*.dslog"))

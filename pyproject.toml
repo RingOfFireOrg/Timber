@@ -6,8 +6,8 @@ requires-python = ">=3.14"
 dependencies = []
 
 [tool.pytest.ini_options]
-pythonpath = [".", "match_processor"]
-testpaths = ["match_processor/tests"]
+pythonpath = [".", "match_processor", "shared"]
+testpaths = ["shared/tests", "match_processor/tests"]
 
 [dependency-groups]
 dev = [

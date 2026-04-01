@@ -7,7 +7,7 @@ import re
 import sys
 from datetime import date
 
-from dsevents_parser import parse_dsevents_path
+from shared.dsevents_parser import parse_dsevents_path
 from match_identifier import (
     extract_fms_info,
     extract_joystick_info,
@@ -16,13 +16,13 @@ from match_identifier import (
     is_real_match,
     group_files_by_match,
 )
-from event_formatter import format_events, collapse_repeats
+from shared.event_formatter import format_events, collapse_repeats
 from match_writer import (
     format_match_events_txt,
     copy_match_files,
     write_match_events_file,
 )
-from dslog_parser import parse_dslog_path
+from shared.dslog_parser import parse_dslog_path
 from dslog_processor import detect_transitions, compute_telemetry
 
 

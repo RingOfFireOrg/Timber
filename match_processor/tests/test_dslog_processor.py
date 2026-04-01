@@ -1,4 +1,4 @@
-from conftest import make_dslog_file
+from shared.tests.conftest import make_dslog_file
 
 
 def test_no_transitions_single_mode():
@@ -7,7 +7,7 @@ def test_no_transitions_single_mode():
     records_args = [{"voltage_raw": 3072, "status": 0xFE}] * 10
     data = make_dslog_file(records_args)
 
-    from dslog_parser import parse_dslog_records
+    from shared.dslog_parser import parse_dslog_records
     records = list(parse_dslog_records(data))
     transitions = detect_transitions(records)
     # Initial mode counts as first transition
@@ -25,7 +25,7 @@ def test_transition_after_debounce():
     )
     data = make_dslog_file(records_args)
 
-    from dslog_parser import parse_dslog_records
+    from shared.dslog_parser import parse_dslog_records
     records = list(parse_dslog_records(data))
     transitions = detect_transitions(records)
     assert len(transitions) == 2
@@ -45,7 +45,7 @@ def test_transition_not_confirmed_under_threshold():
     )
     data = make_dslog_file(records_args)
 
-    from dslog_parser import parse_dslog_records
+    from shared.dslog_parser import parse_dslog_records
     records = list(parse_dslog_records(data))
     transitions = detect_transitions(records)
     assert len(transitions) == 1  # Only initial Disabled
@@ -67,7 +67,7 @@ def test_transition_flicker_ignored():
     )
     data = make_dslog_file(records_args)
 
-    from dslog_parser import parse_dslog_records
+    from shared.dslog_parser import parse_dslog_records
     records = list(parse_dslog_records(data))
     transitions = detect_transitions(records)
     assert len(transitions) == 1
@@ -87,7 +87,7 @@ def test_full_match_sequence():
     )
     data = make_dslog_file(records_args)
 
-    from dslog_parser import parse_dslog_records
+    from shared.dslog_parser import parse_dslog_records
     records = list(parse_dslog_records(data))
     transitions = detect_transitions(records)
     modes = [t["mode"] for t in transitions]
@@ -102,7 +102,7 @@ def test_transition_display_format():
     )
     data = make_dslog_file(records_args)
 
-    from dslog_parser import parse_dslog_records
+    from shared.dslog_parser import parse_dslog_records
     records = list(parse_dslog_records(data))
     transitions = detect_transitions(records)
     assert transitions[1]["display"] == "***** Transition: Autonomous"
@@ -110,7 +110,7 @@ def test_transition_display_format():
 
 def test_telemetry_summary_basic():
     from dslog_processor import compute_telemetry
-    from dslog_parser import parse_dslog_records
+    from shared.dslog_parser import parse_dslog_records
 
     records_args = [
         {"voltage_raw": 2048, "cpu": 50, "can": 100, "trip": 4, "pkt_loss": 10, "status": 0xFE},
@@ -129,7 +129,7 @@ def test_telemetry_summary_basic():
 
 def test_telemetry_excludes_garbage_voltage():
     from dslog_processor import compute_telemetry
-    from dslog_parser import parse_dslog_records
+    from shared.dslog_parser import parse_dslog_records
 
     records_args = [
         {"voltage_raw": 256, "status": 0xFE},     # 1.0V — garbage, excluded
@@ -147,7 +147,7 @@ def test_telemetry_excludes_garbage_voltage():
 
 def test_telemetry_none_when_no_valid_records():
     from dslog_processor import compute_telemetry
-    from dslog_parser import parse_dslog_records
+    from shared.dslog_parser import parse_dslog_records
 
     # All records have garbage voltage
     records_args = [{"voltage_raw": 65535, "status": 0xFF}] * 5

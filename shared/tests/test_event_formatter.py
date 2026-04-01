@@ -1,5 +1,5 @@
 def test_parse_tagged_event_message_included():
-    from event_formatter import parse_tagged_events
+    from shared.event_formatter import parse_tagged_events
     text = "<TagVersion>1 <time> 00.169 <message> Warning at org.photonvision.PhotonCamera: PhotonVision coprocessor error "
     events = parse_tagged_events(text, "05.200")
     assert len(events) == 1
@@ -8,14 +8,14 @@ def test_parse_tagged_event_message_included():
 
 
 def test_parse_tagged_event_message_excluded():
-    from event_formatter import parse_tagged_events
+    from shared.event_formatter import parse_tagged_events
     text = "<TagVersion>1 <time> 00.169 <message> CS: USB Camera 0: Attempting to connect to USB camera on /dev/video0 "
     events = parse_tagged_events(text)
     assert len(events) == 0  # USB camera messages are filtered out
 
 
 def test_parse_tagged_event_coded():
-    from event_formatter import parse_tagged_events
+    from shared.event_formatter import parse_tagged_events
     text = ("<TagVersion>1 <time> 00.000 <count> 1 <flags> 2 <Code> 44000 "
             "<details> Driver Station not keeping up with protocol rates "
             "<location> Driver Station <stack> ")
@@ -27,7 +27,7 @@ def test_parse_tagged_event_coded():
 
 
 def test_parse_tagged_event_multiple_in_one_record():
-    from event_formatter import parse_tagged_events
+    from shared.event_formatter import parse_tagged_events
     text = ("<TagVersion>1 <time> 00.100 <message> Robot is now in Autonomous "
             "<TagVersion>1 <time> 00.200 <message> Robot is now in Teleop ")
     events = parse_tagged_events(text)
@@ -37,7 +37,7 @@ def test_parse_tagged_event_multiple_in_one_record():
 
 
 def test_format_plain_event_fms_connected():
-    from event_formatter import format_plain_event
+    from shared.event_formatter import format_plain_event
     text = "FMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4\n -- FRC Driver Station - Version 26.0"
     result = format_plain_event(text)
     assert result is not None
@@ -45,7 +45,7 @@ def test_format_plain_event_fms_connected():
 
 
 def test_format_plain_event_code_start():
-    from event_formatter import format_plain_event
+    from shared.event_formatter import format_plain_event
     text = "Code Start Notification. "
     result = format_plain_event(text)
     assert result is not None
@@ -53,7 +53,7 @@ def test_format_plain_event_code_start():
 
 
 def test_should_exclude_periodic_trace():
-    from event_formatter import should_exclude
+    from shared.event_formatter import should_exclude
     assert should_exclude("disabledPeriodic(): 0.000075s") is True
     assert should_exclude("robotPeriodic(): 0.017270s") is True
     assert should_exclude("Shuffleboard.update(): 0.006733s") is True
@@ -62,13 +62,13 @@ def test_should_exclude_periodic_trace():
 
 
 def test_should_not_exclude_real_events():
-    from event_formatter import should_exclude
+    from shared.event_formatter import should_exclude
     assert should_exclude("FMS Connected") is False
     assert should_exclude("WARNING (44000): Driver Station not keeping up") is False
 
 
 def test_parse_warning_event():
-    from event_formatter import parse_warning_event
+    from shared.event_formatter import parse_warning_event
     text = "Warning <Code> 44007 <secondsSinceReboot> 116.460\r<Description>FRC: Time since robot boot."
     result = parse_warning_event(text, "116.460")
     assert result is not None
@@ -78,14 +78,14 @@ def test_parse_warning_event():
 
 
 def test_parse_warning_event_not_warning():
-    from event_formatter import parse_warning_event
+    from shared.event_formatter import parse_warning_event
     text = "FMS Connected:   Qualification - 52:1, Field Time: 26/3/29 13:35:4"
     result = parse_warning_event(text)
     assert result is None
 
 
 def test_collapse_repeats_no_repeats():
-    from event_formatter import collapse_repeats
+    from shared.event_formatter import collapse_repeats
     events = [
         {"time": "00.000", "display": "Event A"},
         {"time": "01.000", "display": "Event B"},
@@ -95,7 +95,7 @@ def test_collapse_repeats_no_repeats():
 
 
 def test_collapse_repeats_two_consecutive():
-    from event_formatter import collapse_repeats
+    from shared.event_formatter import collapse_repeats
     events = [
         {"time": "00.000", "display": "Same event"},
         {"time": "01.000", "display": "Same event"},
@@ -107,7 +107,7 @@ def test_collapse_repeats_two_consecutive():
 
 
 def test_collapse_repeats_six_consecutive():
-    from event_formatter import collapse_repeats
+    from shared.event_formatter import collapse_repeats
     events = [{"time": f"0{i}.000", "display": "Repeated msg"} for i in range(6)]
     result = collapse_repeats(events)
     assert len(result) == 2  # first + last
@@ -115,7 +115,7 @@ def test_collapse_repeats_six_consecutive():
 
 
 def test_collapse_repeats_mixed():
-    from event_formatter import collapse_repeats
+    from shared.event_formatter import collapse_repeats
     events = [
         {"time": "00.000", "display": "A"},
         {"time": "01.000", "display": "B"},

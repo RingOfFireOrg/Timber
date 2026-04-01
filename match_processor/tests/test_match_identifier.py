@@ -1,7 +1,7 @@
 import os
 import struct
 
-from conftest import make_dsevents_file, make_dsevents_header
+from shared.tests.conftest import make_dsevents_file, make_dsevents_header
 
 
 def test_extract_fms_info_qualification():
