@@ -2,6 +2,8 @@ import os
 import subprocess
 import sys
 
+import pytest
+
 from conftest import make_dsevents_file
 
 
@@ -206,3 +208,96 @@ def test_participation_match_has_tba_link_no_note(tmp_dirs):
     txt = (dst / f"{match_id}_match_events.txt").read_text()
     assert "The Blue Alliance: https://www.thebluealliance.com/match/2026ncpem_qm13" in txt
     assert "NOTE:" not in txt
+
+
+def test_real_dslog_produces_transitions(tmp_path):
+    """Integration test: real dslog files produce debounced transitions."""
+    import glob
+
+    from dslog_parser import parse_dslog_path
+    from dslog_processor import detect_transitions
+
+    # Use a known match dslog from the test data
+    dslog_files = sorted(glob.glob("2026/UNCPembroke/Q39_1_*.dslog"))
+    if not dslog_files:
+        pytest.skip("No Q39 test data available")
+
+    result = parse_dslog_path(dslog_files[0])
+    assert result["header"] is not None
+    assert len(result["records"]) > 100
+
+    transitions = detect_transitions(result["records"])
+    modes = [t["mode"] for t in transitions]
+    # Q39 should have Autonomous and Teleop transitions
+    assert "Autonomous" in modes
+    assert "Teleop" in modes
+
+
+def test_real_dslog_produces_telemetry(tmp_path):
+    """Integration test: real dslog files produce telemetry summary."""
+    import glob
+
+    from dslog_parser import parse_dslog_path
+    from dslog_processor import compute_telemetry
+
+    dslog_files = sorted(glob.glob("2026/UNCPembroke/Q39_1_*.dslog"))
+    if not dslog_files:
+        pytest.skip("No Q39 test data available")
+
+    result = parse_dslog_path(dslog_files[0])
+    telemetry = compute_telemetry(result["records"])
+
+    assert telemetry is not None
+    assert 6.0 < telemetry["voltage_min"] < 16.0
+    assert 6.0 < telemetry["voltage_max"] < 16.0
+    assert telemetry["voltage_min"] <= telemetry["voltage_max"]
+
+
+def test_end_to_end_with_dslog(tmp_path):
+    """Integration test: full pipeline produces telemetry and transitions in output."""
+    import glob
+    import shutil
+
+    src = tmp_path / "source"
+    dst = tmp_path / "dest"
+    src.mkdir()
+    dst.mkdir()
+
+    # Copy a real match's files to src
+    dsevents = sorted(glob.glob("2026/03/2026_03_28 17_45_53*.dsevents"))
+    if not dsevents:
+        pytest.skip("No Q39 source data available")
+
+    for f in dsevents:
+        base = os.path.basename(f)
+        shutil.copy2(f, src / base)
+        dslog = f.rsplit(".dsevents", 1)[0] + ".dslog"
+        if os.path.exists(dslog):
+            shutil.copy2(dslog, src / os.path.basename(dslog))
+
+    from process_matches import find_dsevents_files, scan_and_identify, process_match
+    from match_identifier import build_match_id
+    matches = scan_and_identify(find_dsevents_files(str(src)), str(dst))
+
+    if not matches:
+        pytest.skip("No matches found in test data")
+
+    key = list(matches.keys())[0]
+    files = matches[key]
+    fms = files[0]["fms_info"]
+    match_id = build_match_id(fms["match_type"], fms["match_number"], fms["replay"])
+    process_match(key, files, match_id, "2026ncpem", str(src), str(dst))
+
+    txt = (dst / f"{match_id}_match_events.txt").read_text()
+    assert "Telemetry:" in txt
+    assert "Voltage:" in txt
+    assert "***** Transition:" in txt
+    # Verify section order
+    lines = txt.split("\n")
+    joystick_idx = next((i for i, l in enumerate(lines) if l == "Joysticks:"), None)
+    telemetry_idx = next((i for i, l in enumerate(lines) if l == "Telemetry:"), None)
+    events_idx = next((i for i, l in enumerate(lines) if l == "Events:"), None)
+    assert joystick_idx is not None
+    assert telemetry_idx is not None
+    assert events_idx is not None
+    assert joystick_idx < telemetry_idx < events_idx
