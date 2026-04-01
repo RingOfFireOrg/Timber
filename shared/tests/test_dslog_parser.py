@@ -120,6 +120,31 @@ def test_parse_records_unsupported_version():
     assert len(records) == 0
 
 
+def test_parse_records_pd_type_rev():
+    from shared.dslog_parser import parse_dslog_records
+    data = make_dslog_file([{"voltage_raw": 3072, "status": 0xFE, "pd_type": 0x21}])
+    records = list(parse_dslog_records(data))
+    assert len(records) == 1
+    assert records[0]["pd_type"] == 0x21
+    assert len(records[0]["pd_data"]) == 33
+
+
+def test_parse_records_pd_type_ctre():
+    from shared.dslog_parser import parse_dslog_records
+    data = make_dslog_file([{"voltage_raw": 3072, "status": 0xFE, "pd_type": 0x19}])
+    records = list(parse_dslog_records(data))
+    assert records[0]["pd_type"] == 0x19
+    assert len(records[0]["pd_data"]) == 25
+
+
+def test_parse_records_pd_type_none():
+    from shared.dslog_parser import parse_dslog_records
+    data = make_dslog_file([{"voltage_raw": 3072, "status": 0xFE, "pd_type": 0x00}])
+    records = list(parse_dslog_records(data))
+    assert records[0]["pd_type"] == 0x00
+    assert len(records[0]["pd_data"]) == 0
+
+
 def test_parse_dslog_path(tmp_path):
     from shared.dslog_parser import parse_dslog_path
     data = make_dslog_file([

@@ -93,6 +93,10 @@ def parse_dslog_records(data):
         if offset + record_size > len(data):
             break  # truncated final record
 
+        # Extract raw PD data for downstream consumers (e.g., PDH current decoding)
+        pd_data_offset = offset + FIXED_SIZE + PD_HEADER_SIZE
+        pd_data_bytes = data[pd_data_offset : pd_data_offset + pd_extra]
+
         yield {
             "index": index,
             "voltage": voltage_raw / 256,
@@ -101,6 +105,8 @@ def parse_dslog_records(data):
             "trip_ms": trip * 0.5,
             "packet_loss": max(0.0, min(1.0, pkt_loss * 4 * 0.01)),
             "mode": _decode_mode(status),
+            "pd_type": pd_type,
+            "pd_data": pd_data_bytes,
         }
 
         offset += record_size
