@@ -303,3 +303,32 @@ def test_telemetry_section_none():
     txt = format_match_events_txt(fms_info, "E3_R1", "2026ncpem", log_files, events_by_log, joysticks, telemetry=None)
 
     assert "No telemetry data available." in txt
+
+
+def test_transition_events_interleaved():
+    from match_writer import format_match_events_txt
+    fms_info = {
+        "match_type": "Qualification", "match_number": 39, "replay": 1,
+        "field_time": "26/3/28 21:45:53",
+        "ds_version": "FRC Driver Station - Version 26.0",
+    }
+    log_files = [{"seq": 1, "basename": "2026_03_28 17_45_53 Sat"}]
+    events_by_log = {1: [
+        {"time": "000.000", "display": "FMS Connected"},
+        {"time": "001.000", "display": "Code Start Notification"},
+    ]}
+    joysticks = []
+    transition_events = {1: [
+        {"time": "000.500", "display": "***** Transition: Disabled"},
+    ]}
+
+    txt = format_match_events_txt(fms_info, "Q39", "2026ncpem", log_files, events_by_log, joysticks,
+                                  transition_events=transition_events)
+
+    lines = txt.split("\n")
+    import re
+    event_lines = [l.strip() for l in lines if re.match(r'^\[1\] \d{3}\.\d{3}', l.strip())]
+    # Should be chronologically sorted
+    assert "FMS Connected" in event_lines[0]
+    assert "Transition: Disabled" in event_lines[1]
+    assert "Code Start Notification" in event_lines[2]
