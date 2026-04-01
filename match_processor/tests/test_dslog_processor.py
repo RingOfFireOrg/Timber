@@ -106,3 +106,59 @@ def test_transition_display_format():
     records = list(parse_dslog_records(data))
     transitions = detect_transitions(records)
     assert transitions[1]["display"] == "***** Transition: Autonomous"
+
+
+def test_telemetry_summary_basic():
+    from dslog_processor import compute_telemetry
+    from dslog_parser import parse_dslog_records
+
+    records_args = [
+        {"voltage_raw": 2048, "cpu": 50, "can": 100, "trip": 4, "pkt_loss": 10, "status": 0xFE},
+        {"voltage_raw": 3200, "cpu": 100, "can": 200, "trip": 20, "pkt_loss": 25, "status": 0xFE},
+    ]
+    data = make_dslog_file(records_args)
+    records = list(parse_dslog_records(data))
+    telemetry = compute_telemetry(records)
+
+    assert telemetry is not None
+    assert abs(telemetry["voltage_min"] - 8.0) < 0.01    # 2048/256
+    assert abs(telemetry["voltage_max"] - 12.5) < 0.01   # 3200/256
+    assert abs(telemetry["cpu_min"] - 25.0) < 0.1        # 50 × 0.5 × 0.01 = 0.25 → 25%
+    assert abs(telemetry["cpu_max"] - 50.0) < 0.1        # 100 × 0.5 × 0.01 = 0.50 → 50%
+
+
+def test_telemetry_excludes_garbage_voltage():
+    from dslog_processor import compute_telemetry
+    from dslog_parser import parse_dslog_records
+
+    records_args = [
+        {"voltage_raw": 256, "status": 0xFE},     # 1.0V — garbage, excluded
+        {"voltage_raw": 65535, "status": 0xFE},    # 255.99V — garbage, excluded
+        {"voltage_raw": 2560, "cpu": 0, "can": 0, "trip": 0, "pkt_loss": 0, "status": 0xFE},  # 10.0V — valid
+    ]
+    data = make_dslog_file(records_args)
+    records = list(parse_dslog_records(data))
+    telemetry = compute_telemetry(records)
+
+    assert telemetry is not None
+    assert abs(telemetry["voltage_min"] - 10.0) < 0.01
+    assert abs(telemetry["voltage_max"] - 10.0) < 0.01
+
+
+def test_telemetry_none_when_no_valid_records():
+    from dslog_processor import compute_telemetry
+    from dslog_parser import parse_dslog_records
+
+    # All records have garbage voltage
+    records_args = [{"voltage_raw": 65535, "status": 0xFF}] * 5
+    data = make_dslog_file(records_args)
+    records = list(parse_dslog_records(data))
+    telemetry = compute_telemetry(records)
+
+    assert telemetry is None
+
+
+def test_telemetry_none_when_empty():
+    from dslog_processor import compute_telemetry
+    telemetry = compute_telemetry([])
+    assert telemetry is None

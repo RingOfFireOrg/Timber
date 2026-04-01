@@ -61,3 +61,33 @@ def detect_transitions(records):
             streak_count = 0
 
     return transitions
+
+
+# Voltage range for valid records (exclude pre-connection garbage)
+VOLTAGE_MIN_VALID = 6.0
+VOLTAGE_MAX_VALID = 16.0
+
+
+def compute_telemetry(records):
+    """Compute whole-match min/max telemetry from parsed dslog records.
+
+    Only includes records with plausible voltage (6.0 < V < 16.0).
+    Returns dict with *_min/*_max keys, or None if no valid records.
+    """
+    valid = [r for r in records if VOLTAGE_MIN_VALID < r["voltage"] < VOLTAGE_MAX_VALID]
+
+    if not valid:
+        return None
+
+    return {
+        "voltage_min": min(r["voltage"] for r in valid),
+        "voltage_max": max(r["voltage"] for r in valid),
+        "cpu_min": min(r["cpu"] * 100 for r in valid),
+        "cpu_max": max(r["cpu"] * 100 for r in valid),
+        "can_min": min(r["can"] * 100 for r in valid),
+        "can_max": max(r["can"] * 100 for r in valid),
+        "trip_min": min(r["trip_ms"] for r in valid),
+        "trip_max": max(r["trip_ms"] for r in valid),
+        "packet_loss_min": min(r["packet_loss"] * 100 for r in valid),
+        "packet_loss_max": max(r["packet_loss"] * 100 for r in valid),
+    }
