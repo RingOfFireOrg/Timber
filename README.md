@@ -13,7 +13,11 @@ Automatically organizes your FRC Driver Station match logs from competition and 
 3. Groups files from the same match together and detects robot restarts mid-match
 4. Skips matches you've already processed
 5. Copies each match's log files into your event folder with clear names (e.g., `Q52_1_`)
-6. Writes a `match_events.txt` summary with key events, errors, and warnings for each match
+6. Writes a `match_events.txt` summary for each match containing:
+   - Timestamped events, errors, and warnings from the Driver Station
+   - Robot mode transitions (Autonomous, Teleop, Disabled) parsed from the `.dslog` binary data
+   - Telemetry summary with min/max battery voltage, CPU, CAN utilization, trip time, and packet loss
+   - Joystick configuration and a direct link to the match on The Blue Alliance
 7. Flags matches where the robot didn't appear to participate but still generated log files
 
 ### Prerequisites
@@ -83,28 +87,42 @@ Process these matches? [Y/n]
 Each match gets a `match_events.txt` file like this:
 
 ```
-Match: Elimination 4
+Match: Qualification 39
 Event: 2026ncpem
-Field Time: 26/3/29 17:44:21
+Field Time: 26/3/28 21:46:26
 DS Version: FRC Driver Station - Version 26.0
 Replay: 1
-The Blue Alliance: https://www.thebluealliance.com/match/2026ncpem_sf4m1
+The Blue Alliance: https://www.thebluealliance.com/match/2026ncpem_qm39
 
 Log Files:
-  [1] 2026_03_29 13_43_47 Sun (E4_R1_1_)
-
-Events:
-  [1] 000.000  FMS Connected
-  [1] 001.817  ERROR (44002): Ping Results: ...
-  [1] 006.082  ERROR (44003): FRC: No robot code is currently running.
-  ...
+  [1] 2026_03_28 17_45_53 Sat (Q39_1_)
 
 Joysticks:
   0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+
+Telemetry:
+  Voltage: 7.43 - 12.77 V
+  CPU: 27 - 90%
+  CAN Utilization: 0 - 100%
+  Trip Time: 4.5 - 11.0 ms
+  Packet Loss: 0 - 40%
+
+Events:
+  [1] 000.000  FMS Connected
+  [1] 150.223  Code Start Notification
+  [1] 563.360  ***** Transition: Autonomous
+  [1] 584.860  ***** Transition: Disabled
+  [1] 588.220  ***** Transition: Teleop
+  [1] 728.040  ***** Transition: Disabled
 ```
 
-If the robot didn't participate in a match (no code running, no joysticks detected), the output includes a note:
+The Telemetry section gives you a quick health check of your robot during the match — if you see low voltage or high CAN utilization, that's worth investigating. The transition timestamps tell you exactly when your robot entered each mode, which is useful for debugging auto routines or figuring out why you lost connection mid-match.
+
+If the robot didn't participate in a match (no code running, no joysticks detected), the output flags it:
 
 ```
 NOTE: The robot does not appear to have participated in this match.
+
+Telemetry:
+  No telemetry data available.
 ```
