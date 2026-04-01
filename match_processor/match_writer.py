@@ -37,17 +37,19 @@ def detect_non_participation(events_by_log, joysticks):
     return True
 
 
-def format_match_events_txt(fms_info, match_id, event_name, log_files, events_by_log, joysticks):
+def format_match_events_txt(fms_info, match_id, event_name, log_files, events_by_log, joysticks,
+                            telemetry=None, transition_events=None):
     """Generate the full match_events.txt content as a string.
 
     Args:
         fms_info: dict with match_type, match_number, replay, field_time, ds_version
         match_id: str like 'Q52' or 'E6_R1'
-        event_name: str TBA event key (e.g., '2026ncpem') — previously a display name,
-            now a TBA key used for both the Event: header line and TBA URL construction
+        event_name: str TBA event key (e.g., '2026ncpem')
         log_files: list of dicts with seq and basename
         events_by_log: dict mapping seq number -> list of event dicts (time, display)
         joysticks: list of joystick dicts (number, name, axes, buttons, povs)
+        telemetry: dict with *_min/*_max keys from compute_telemetry, or None
+        transition_events: dict mapping seq number -> list of transition event dicts, or None
     """
     lines = []
 
@@ -72,18 +74,34 @@ def format_match_events_txt(fms_info, match_id, event_name, log_files, events_by
         lines.append(f"  [{lf['seq']}] {lf['basename']} ({match_id}_{lf['seq']}_)")
     lines.append("")
 
-    # Events
-    lines.append("Events:")
-    for lf in log_files:
-        seq = lf["seq"]
-        for event in events_by_log.get(seq, []):
-            lines.append(f"  [{seq}] {event['time']}  {event['display']}")
-    lines.append("")
-
     # Joysticks
     lines.append("Joysticks:")
     for j in joysticks:
         lines.append(f"  {j['number']}: {j['name']} - {j['axes']} axes, {j['buttons']} buttons, {j['povs']} POV")
+    lines.append("")
+
+    # Telemetry
+    lines.append("Telemetry:")
+    if telemetry is None:
+        lines.append("  No telemetry data available.")
+    else:
+        lines.append(f"  Voltage: {telemetry['voltage_min']:.2f} - {telemetry['voltage_max']:.2f} V")
+        lines.append(f"  CPU: {telemetry['cpu_min']:.0f} - {telemetry['cpu_max']:.0f}%")
+        lines.append(f"  CAN Utilization: {telemetry['can_min']:.0f} - {telemetry['can_max']:.0f}%")
+        lines.append(f"  Trip Time: {telemetry['trip_min']:.1f} - {telemetry['trip_max']:.1f} ms")
+        lines.append(f"  Packet Loss: {telemetry['packet_loss_min']:.0f} - {telemetry['packet_loss_max']:.0f}%")
+    lines.append("")
+
+    # Events (merge dsevents and transition events, sorted chronologically)
+    lines.append("Events:")
+    for lf in log_files:
+        seq = lf["seq"]
+        merged = list(events_by_log.get(seq, []))
+        if transition_events:
+            merged.extend(transition_events.get(seq, []))
+        merged.sort(key=lambda e: e["time"])
+        for event in merged:
+            lines.append(f"  [{seq}] {event['time']}  {event['display']}")
     lines.append("")
 
     return "\n".join(lines)

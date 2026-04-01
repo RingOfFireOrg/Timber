@@ -232,3 +232,74 @@ def test_write_match_events_file(tmp_dirs):
     path = dst / "Q52_match_events.txt"
     assert path.exists()
     assert "Qualification 52" in path.read_text()
+
+
+def test_section_order_joysticks_telemetry_before_events():
+    from match_writer import format_match_events_txt
+    fms_info = {
+        "match_type": "Qualification", "match_number": 39, "replay": 1,
+        "field_time": "26/3/28 21:45:53",
+        "ds_version": "FRC Driver Station - Version 26.0",
+    }
+    log_files = [{"seq": 1, "basename": "2026_03_28 17_45_53 Sat"}]
+    events_by_log = {1: [{"time": "000.000", "display": "FMS Connected"}]}
+    joysticks = [{"number": 0, "name": "Xbox", "axes": 6, "buttons": 16, "povs": 1}]
+    telemetry = {
+        "voltage_min": 7.43, "voltage_max": 12.71,
+        "cpu_min": 0, "cpu_max": 67,
+        "can_min": 0, "can_max": 100,
+        "trip_min": 0.0, "trip_max": 11.0,
+        "packet_loss_min": 0, "packet_loss_max": 40,
+    }
+
+    txt = format_match_events_txt(fms_info, "Q39", "2026ncpem", log_files, events_by_log, joysticks, telemetry=telemetry)
+    lines = txt.split("\n")
+
+    joystick_idx = next(i for i, l in enumerate(lines) if l == "Joysticks:")
+    telemetry_idx = next(i for i, l in enumerate(lines) if l == "Telemetry:")
+    events_idx = next(i for i, l in enumerate(lines) if l == "Events:")
+
+    assert joystick_idx < telemetry_idx < events_idx
+
+
+def test_telemetry_section_content():
+    from match_writer import format_match_events_txt
+    fms_info = {
+        "match_type": "Qualification", "match_number": 39, "replay": 1,
+        "field_time": "26/3/28 21:45:53",
+        "ds_version": "FRC Driver Station - Version 26.0",
+    }
+    log_files = [{"seq": 1, "basename": "2026_03_28 17_45_53 Sat"}]
+    events_by_log = {1: []}
+    joysticks = []
+    telemetry = {
+        "voltage_min": 7.43, "voltage_max": 12.71,
+        "cpu_min": 0, "cpu_max": 67,
+        "can_min": 0, "can_max": 100,
+        "trip_min": 0.0, "trip_max": 11.0,
+        "packet_loss_min": 0, "packet_loss_max": 40,
+    }
+
+    txt = format_match_events_txt(fms_info, "Q39", "2026ncpem", log_files, events_by_log, joysticks, telemetry=telemetry)
+
+    assert "Voltage: 7.43 - 12.71 V" in txt
+    assert "CPU: 0 - 67%" in txt
+    assert "CAN Utilization: 0 - 100%" in txt
+    assert "Trip Time: 0.0 - 11.0 ms" in txt
+    assert "Packet Loss: 0 - 40%" in txt
+
+
+def test_telemetry_section_none():
+    from match_writer import format_match_events_txt
+    fms_info = {
+        "match_type": "Elimination", "match_number": 3, "replay": 1,
+        "field_time": "26/3/29 17:42:4",
+        "ds_version": "FRC Driver Station - Version 26.0",
+    }
+    log_files = [{"seq": 1, "basename": "2026_03_29 13_41_30 Sun"}]
+    events_by_log = {1: []}
+    joysticks = []
+
+    txt = format_match_events_txt(fms_info, "E3_R1", "2026ncpem", log_files, events_by_log, joysticks, telemetry=None)
+
+    assert "No telemetry data available." in txt
