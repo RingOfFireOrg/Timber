@@ -8,6 +8,20 @@ The Blue Alliance: https://www.thebluealliance.com/match/2026ncpem_qm39
 Log Files:
   [1] 2026_03_28 17_45_53 Sat (Q39_1_)
 
+Joysticks:
+  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
+
+Telemetry:
+  Voltage: 7.43 - 12.77 V
+  CPU: 27 - 90%
+  CAN Utilization: 0 - 100%
+  Trip Time: 4.5 - 11.0 ms
+  Packet Loss: 0 - 40%
+
 Events:
   [1] 000.000  FMS Connected
   [1] 001.251  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
@@ -43,11 +57,13 @@ Events:
   [1] 159.231  INFO (1): Loop time of 0.02s overrun
   [1] 159.275  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [1] 159.888  [phoenix] Signal Logger: Available disk space (57 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 159.980  ***** Transition: Disabled
   [1] 160.285  INFO (1): Loop time of 0.02s overrun
   [1] 160.353  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [1] 161.662  INFO (1): Loop time of 0.02s overrun
   [1] 161.723  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [1] 162.882  [phoenix] Signal Logger: Available disk space (57 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 163.160  ***** Transition: Disconnected
   [1] 163.885  INFO (1): Loop time of 0.02s overrun
   [1] 163.912  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [1] 163.912  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
@@ -59,6 +75,7 @@ Events:
   [1] 164.012  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000037s
   [1] 164.024  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [1] 164.024  INFO (1): Loop time of 0.02s overrun
+  [1] 164.300  ***** Transition: Disabled
   [1] 165.902  [phoenix] Signal Logger: Available disk space (57 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
   [1] 168.924  [phoenix] Signal Logger: Available disk space (57 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
   [1] 168.965  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
@@ -134,14 +151,16 @@ Events:
   [1] 209.046  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
   [1] 209.086  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [1] 209.086  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 563.360  ***** Transition: Autonomous
+  [1] 564.320  ***** Transition: Disconnected
+  [1] 565.060  ***** Transition: Autonomous
+  [1] 568.500  ***** Transition: Disconnected
+  [1] 568.680  ***** Transition: Autonomous
+  [1] 584.860  ***** Transition: Disabled
+  [1] 588.220  ***** Transition: Teleop
+  [1] 728.040  ***** Transition: Disabled
   [1] 729.265  ERROR (44000): ipconfig /release
+  [1] 729.500  ***** Transition: Disconnected
   [1] 729.719  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [1] 730.721  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
   [1] 732.526  ERROR (44005): FMS Disconnect
-
-Joysticks:
-  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
-  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
-  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV

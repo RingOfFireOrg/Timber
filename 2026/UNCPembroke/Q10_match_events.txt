@@ -8,6 +8,20 @@ The Blue Alliance: https://www.thebluealliance.com/match/2026ncpem_qm10
 Log Files:
   [1] 2026_03_28 12_27_16 Sat (Q10_1_)
 
+Joysticks:
+  0: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  2: Logitech Dual Action - 4 axes, 12 buttons, 1 POV
+  3: Controller (Xbox One For Windows) - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
+
+Telemetry:
+  Voltage: 6.55 - 12.16 V
+  CPU: 0 - 93%
+  CAN Utilization: 0 - 100%
+  Trip Time: 3.5 - 21.0 ms
+  Packet Loss: 0 - 36%
+
 Events:
   [1] 000.387  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [1] 000.587  FMS Connected
@@ -49,8 +63,10 @@ Events:
   [1] 197.644  [phoenix] Signal Logger: Available disk space (76 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
   [1] 197.780  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [1] 197.780  INFO (1): Loop time of 0.02s overrun
+  [1] 197.980  ***** Transition: Disabled
   [1] 200.623  [phoenix] Signal Logger: Available disk space (75 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
   [1] 200.865  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [1] 200.900  ***** Transition: Disconnected
   [1] 200.924  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [1] 200.924  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [1] 200.924  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
@@ -59,6 +75,9 @@ Events:
   [1] 201.363  INFO (1): Loop time of 0.02s overrun
   [1] 201.425  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000037s
   [1] 201.425  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 201.440  ***** Transition: Disabled
+  [1] 202.320  ***** Transition: Disconnected
+  [1] 202.740  ***** Transition: Disabled
   [1] 203.203  INFO (1): Loop time of 0.02s overrun
   [1] 203.245  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [1] 203.665  [phoenix] Signal Logger: Available disk space (75 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
@@ -129,15 +148,13 @@ Events:
   [1] 241.023  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [1] 241.023  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [1] 242.726  [phoenix] Signal Logger: Available disk space (72 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 262.040  ***** Transition: Autonomous
   [1] 277.314  ERROR (44000): FMS Auto Stop
+  [1] 277.340  ***** Transition: Disabled
+  [1] 286.680  ***** Transition: Teleop
+  [1] 426.720  ***** Transition: Disabled
   [1] 427.910  ERROR (44000): ipconfig /release
+  [1] 428.060  ***** Transition: Disconnected
   [1] 428.351  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [1] 429.352  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
   [1] 431.155  ERROR (44005): FMS Disconnect
-
-Joysticks:
-  0: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  2: Logitech Dual Action - 4 axes, 12 buttons, 1 POV
-  3: Controller (Xbox One For Windows) - 0 axes, 0 buttons, 0 POV
-  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV

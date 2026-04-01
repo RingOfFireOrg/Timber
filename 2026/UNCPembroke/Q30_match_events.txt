@@ -8,6 +8,20 @@ The Blue Alliance: https://www.thebluealliance.com/match/2026ncpem_qm30
 Log Files:
   [1] 2026_03_28 16_17_43 Sat (Q30_1_)
 
+Joysticks:
+  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
+
+Telemetry:
+  Voltage: 8.35 - 12.82 V
+  CPU: 44 - 92%
+  CAN Utilization: 0 - 74%
+  Trip Time: 4.0 - 26.5 ms
+  Packet Loss: 0 - 36%
+
 Events:
   [1] 000.000  FMS Connected
   [1] 001.478  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
@@ -53,6 +67,7 @@ Events:
   [1] 202.653  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000093s
   [1] 202.754  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [1] 202.754  INFO (1): Loop time of 0.02s overrun
+  [1] 203.580  ***** Transition: Disabled
   [1] 203.599  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
   [1] 203.757  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [1] 203.757  INFO (1): Loop time of 0.02s overrun
@@ -170,15 +185,13 @@ Events:
   [1] 252.715  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
   [1] 252.874  [phoenix] Signal Logger: Available disk space (58 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
   [1] 254.416  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 637.280  ***** Transition: Autonomous
   [1] 651.993  ERROR (44000): FMS Auto Stop
+  [1] 652.320  ***** Transition: Disabled
+  [1] 662.060  ***** Transition: Teleop
+  [1] 802.520  ***** Transition: Disabled
   [1] 803.227  ERROR (44000): ipconfig /release
+  [1] 803.460  ***** Transition: Disconnected
   [1] 803.666  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [1] 804.716  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
   [1] 806.385  ERROR (44005): FMS Disconnect
-
-Joysticks:
-  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
-  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
-  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV

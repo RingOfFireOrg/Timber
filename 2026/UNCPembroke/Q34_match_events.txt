@@ -9,6 +9,20 @@ Log Files:
   [1] 2026_03_28 17_01_04 Sat (Q34_1_)
   [2] 2026_03_28 17_03_41 Sat (Q34_2_)
 
+Joysticks:
+  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
+
+Telemetry:
+  Voltage: 7.12 - 12.68 V
+  CPU: 28 - 95%
+  CAN Utilization: 0 - 100%
+  Trip Time: 1.0 - 10.0 ms
+  Packet Loss: 0 - 44%
+
 Events:
   [1] 000.000  FMS Connected
   [1] 000.618  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
@@ -47,6 +61,7 @@ Events:
   [2] 012.141  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000074s
   [2] 012.335  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [2] 012.335  INFO (1): Loop time of 0.02s overrun
+  [2] 013.120  ***** Transition: Disabled
   [2] 013.395  INFO (1): Loop time of 0.02s overrun (repeated 1x)
   [2] 013.454  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [2] 013.496  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000055s
@@ -125,15 +140,13 @@ Events:
   [2] 057.203  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [2] 057.203  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [2] 057.249  [phoenix] Signal Logger: Available disk space (74 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [2] 175.740  ***** Transition: Autonomous
   [2] 186.546  ERROR (44000): FMS Auto Stop
+  [2] 186.600  ***** Transition: Disabled
+  [2] 200.360  ***** Transition: Teleop
+  [2] 340.360  ***** Transition: Disabled
   [2] 341.995  ERROR (44000): ipconfig /release
+  [2] 342.080  ***** Transition: Disconnected
   [2] 342.438  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [2] 343.439  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
   [2] 345.241  ERROR (44005): FMS Disconnect
-
-Joysticks:
-  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
-  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
-  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV

@@ -8,11 +8,26 @@ The Blue Alliance: https://www.thebluealliance.com/match/2026ncpem_qm25
 Log Files:
   [1] 2026_03_28 15_30_12 Sat (Q25_1_)
 
+Joysticks:
+  0: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  1: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  2: Controller (Gamepad F310) - 0 axes, 0 buttons, 0 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
+
+Telemetry:
+  Voltage: 7.68 - 12.87 V
+  CPU: 51 - 72%
+  CAN Utilization: 0 - 66%
+  Trip Time: 4.0 - 9.0 ms
+  Packet Loss: 0 - 44%
+
 Events:
   [1] 000.000  FMS Connected
   [1] 001.215  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
   [1] 139.650  Code Start Notification
   [1] 139.657  Code Start Notification (repeated 1x)
+  [1] 139.700  ***** Transition: Disabled
   [1] 139.859  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [1] 139.859  INFO (1): Loop time of 0.02s overrun
   [1] 139.859  [phoenix] Signal Logger: Available disk space (85 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
@@ -50,11 +65,13 @@ Events:
   [1] 139.859  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
   [1] 139.859  WARNING (1): [AdvantageKit] Failed to open output log file.
   [1] 139.859  ERROR (44003): FRC: No robot code is currently running.
+  [1] 139.860  ***** Transition: Disconnected
   [1] 140.060  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [1] 140.755  [phoenix] Signal Logger Started (Network: EA381A4E394C4853202020500F0F18FF)
   [1] 140.755  [phoenix] Signal Logger Started (Network: rio)
   [1] 140.755  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [1] 140.755  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 140.860  ***** Transition: Disabled
   [1] 141.139  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
   [1] 141.193  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [1] 141.252  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
@@ -73,6 +90,8 @@ Events:
   [1] 143.154  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [1] 143.154  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [1] 143.234  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 0: HAL: CAN Receive has Timed Out
+  [1] 143.700  ***** Transition: Disconnected
+  [1] 143.860  ***** Transition: Disabled
   [1] 144.151  INFO (1): Loop time of 0.02s overrun
   [1] 144.192  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [1] 144.192  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
@@ -288,14 +307,14 @@ Events:
   [1] 198.045  WARNING (2): [Spark Max] IDs: 8, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
   [1] 198.742  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [1] 198.742  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 255.640  ***** Transition: Autonomous
+  [1] 276.360  ***** Transition: Disabled
+  [1] 280.260  ***** Transition: Teleop
+  [1] 282.860  ***** Transition: Disconnected
+  [1] 286.440  ***** Transition: Teleop
+  [1] 420.300  ***** Transition: Disabled
   [1] 421.816  ERROR (44000): ipconfig /release
+  [1] 422.120  ***** Transition: Disconnected
   [1] 422.314  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [1] 423.162  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
   [1] 425.049  ERROR (44005): FMS Disconnect
-
-Joysticks:
-  0: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  1: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
-  2: Controller (Gamepad F310) - 0 axes, 0 buttons, 0 POV
-  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
-  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV

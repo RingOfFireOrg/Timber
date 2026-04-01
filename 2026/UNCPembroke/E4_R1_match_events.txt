@@ -11,6 +11,20 @@ Log Files:
   [3] 2026_03_29 13_47_54 Sun (E4_R1_3_)
   [4] 2026_03_29 13_48_10 Sun (E4_R1_4_)
 
+Joysticks:
+  0: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  1: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
+
+Telemetry:
+  Voltage: 7.16 - 14.62 V
+  CPU: 0 - 66%
+  CAN Utilization: 0 - 50%
+  Trip Time: 4.5 - 127.5 ms
+  Packet Loss: 0 - 48%
+
 Events:
   [1] 000.000  FMS Connected
   [1] 001.817  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
@@ -149,6 +163,7 @@ Events:
   [1] 006.460  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
   [1] 006.460  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in (repeated 3x)
   [1] 006.460  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 006.480  ***** Transition: Disabled
   [1] 006.497  [phoenix] Signal Logger Started (Network: rio)
   [1] 006.497  [phoenix] Signal Logger Started (Network: EA381A4E394C4853202020500F0F18FF)
   [1] 006.497  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
@@ -162,9 +177,11 @@ Events:
   [1] 008.100  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
   [1] 008.179  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [1] 008.239  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 013.240  ***** Transition: Disconnected
   [1] 013.444  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [1] 031.706  ERROR (44005): FMS Disconnect
   [2] 000.000  FMS Connected
+  [2] 000.040  ***** Transition: Disconnected
   [2] 000.213  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [2] 000.213  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [2] 000.213  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
@@ -172,6 +189,7 @@ Events:
   [2] 000.213  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
   [2] 000.213  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
   [2] 000.414  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [2] 000.840  ***** Transition: Disabled
   [2] 000.897  ERROR (44003): FRC: No robot code is currently running.
   [2] 002.280  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [2] 002.280  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
@@ -279,7 +297,13 @@ Events:
   [2] 058.759  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [2] 058.824  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [2] 059.842  [phoenix] Signal Logger: Available disk space (97 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [2] 103.780  ***** Transition: Autonomous
+  [2] 104.620  ***** Transition: Disconnected
+  [2] 104.720  ***** Transition: Autonomous
   [2] 112.762  ERROR (44000): FMS Auto Stop
+  [2] 112.840  ***** Transition: Disabled
+  [2] 128.560  ***** Transition: Teleop
+  [2] 194.260  ***** Transition: Disconnected
   [2] 194.602  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [2] 196.204  ERROR (44000): Driver Station not keeping up with protocol rates
   [2] 196.404  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
@@ -294,10 +318,3 @@ Events:
   [4] 001.024  ERROR (44000): Driver Station not keeping up with protocol rates
   [4] 039.395  ERROR (44000): Driver Station not keeping up with protocol rates (repeated 29x)
   [4] 089.873  ERROR (44005): FMS Disconnect
-
-Joysticks:
-  0: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  1: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
-  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
-  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV

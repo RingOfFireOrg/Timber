@@ -13,6 +13,20 @@ Log Files:
   [5] 2026_03_29 14_10_16 Sun (E6_R1_5_)
   [6] 2026_03_29 14_10_33 Sun (E6_R1_6_)
 
+Joysticks:
+  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
+
+Telemetry:
+  Voltage: 8.25 - 13.68 V
+  CPU: 26 - 90%
+  CAN Utilization: 0 - 76%
+  Trip Time: 4.0 - 11.0 ms
+  Packet Loss: 0 - 68%
+
 Events:
   [1] 000.000  FMS Connected
   [1] 000.420  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-bad FRC: Driver Station ping status has changed.
@@ -20,8 +34,11 @@ Events:
   [1] 009.979  ERROR (44005): FMS Disconnect
   [2] 000.000  FMS Connected
   [2] 000.000  Code Start Notification
+  [2] 000.020  ***** Transition: Disconnected
   [2] 000.206  ERROR (44003): FRC: No robot code is currently running.
+  [2] 000.220  ***** Transition: Disabled
   [2] 000.352  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [2] 000.360  ***** Transition: Disconnected
   [2] 000.553  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
   [2] 000.553  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000037s
   [2] 000.553  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
@@ -120,6 +137,7 @@ Events:
   [3] 010.452  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
   [3] 010.452  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
   [3] 010.452  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [3] 010.480  ***** Transition: Disabled
   [3] 011.830  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
   [3] 011.889  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [3] 011.889  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
@@ -204,6 +222,7 @@ Events:
   [3] 056.931  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
   [3] 056.931  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
   [3] 057.809  [phoenix] Signal Logger: Available disk space (73 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 060.000  ***** Transition: Autonomous
   [3] 060.808  [phoenix] Signal Logger: Available disk space (73 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
   [3] 060.887  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [3] 060.887  INFO (1): Loop time of 0.02s overrun
@@ -225,6 +244,9 @@ Events:
   [3] 066.953  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
   [3] 069.829  [phoenix] Signal Logger: Available disk space (72 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
   [3] 072.969  ERROR (44000): FMS Auto Stop
+  [3] 073.220  ***** Transition: Disabled
+  [3] 084.800  ***** Transition: Teleop
+  [3] 120.820  ***** Transition: Disconnected
   [3] 121.012  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [3] 122.613  ERROR (44000): Driver Station not keeping up with protocol rates
   [3] 138.557  ERROR (44000): Driver Station not keeping up with protocol rates (repeated 12x)
@@ -273,12 +295,14 @@ Events:
   [6] 006.591  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000037s
   [6] 007.233  INFO (1): Loop time of 0.02s overrun
   [6] 007.303  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [6] 008.200  ***** Transition: Teleop
   [6] 008.248  INFO (1): Loop time of 0.02s overrun
   [6] 008.308  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [6] 008.389  [phoenix] Signal Logger: Available disk space (95 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
   [6] 009.851  INFO (1): Loop time of 0.02s overrun
   [6] 009.890  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [6] 011.391  [phoenix] Signal Logger: Available disk space (95 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 011.420  ***** Transition: Disconnected
   [6] 011.599  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
   [6] 011.660  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [6] 011.660  INFO (1): Loop time of 0.02s overrun
@@ -287,9 +311,11 @@ Events:
   [6] 011.660  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
   [6] 011.660  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
   [6] 011.660  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
+  [6] 012.240  ***** Transition: Teleop
   [6] 014.415  [phoenix] Signal Logger: Available disk space (95 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
   [6] 016.650  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [6] 016.650  INFO (1): Loop time of 0.02s overrun
+  [6] 016.820  ***** Transition: Disconnected
   [6] 017.175  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000037s
   [6] 017.213  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [6] 017.213  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
@@ -300,6 +326,7 @@ Events:
   [6] 017.243  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [6] 017.243  INFO (1): Loop time of 0.02s overrun
   [6] 017.432  [phoenix] Signal Logger: Available disk space (94 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [6] 017.540  ***** Transition: Teleop
   [6] 019.710  INFO (1): Loop time of 0.02s overrun
   [6] 019.749  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [6] 020.452  [phoenix] Signal Logger: Available disk space (94 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
@@ -345,13 +372,8 @@ Events:
   [6] 042.250  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [6] 042.250  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
   [6] 042.250  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Second has not reported a message interface UUID - is your coprocessor's camera started?
+  [6] 042.900  ***** Transition: Disabled
   [6] 044.035  ERROR (44000): ipconfig /release
+  [6] 044.340  ***** Transition: Disconnected
   [6] 044.474  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [6] 047.279  ERROR (44005): FMS Disconnect
-
-Joysticks:
-  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
-  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
-  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV

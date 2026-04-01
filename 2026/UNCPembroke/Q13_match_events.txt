@@ -9,6 +9,20 @@ Log Files:
   [1] 2026_03_28 13_29_12 Sat (Q13_1_)
   [2] 2026_03_28 13_32_47 Sat (Q13_2_)
 
+Joysticks:
+  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  2: Controller (Gamepad F310) - 0 axes, 0 buttons, 0 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
+
+Telemetry:
+  Voltage: 7.20 - 13.42 V
+  CPU: 40 - 74%
+  CAN Utilization: 0 - 100%
+  Trip Time: 4.0 - 25.0 ms
+  Packet Loss: 0 - 44%
+
 Events:
   [1] 000.000  FMS Connected
   [1] 001.692  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
@@ -16,6 +30,7 @@ Events:
   [1] 211.599  ERROR (44005): FMS Disconnect
   [2] 000.000  FMS Connected
   [2] 000.000  Code Start Notification
+  [2] 000.020  ***** Transition: Disconnected
   [2] 000.223  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [2] 000.223  INFO (1): Loop time of 0.02s overrun
   [2] 000.223  [phoenix] Signal Logger Started (Network: rio)
@@ -50,6 +65,7 @@ Events:
   [2] 000.223  ERROR (44003): FRC: No robot code is currently running.
   [2] 000.430  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [2] 001.432  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-GOOD,  roboRIO(.2)-GOOD,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [2] 001.640  ***** Transition: Disabled
   [2] 001.810  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [2] 001.810  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [2] 001.810  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
@@ -66,14 +82,20 @@ Events:
   [2] 002.690  WARNING (1): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
   [2] 002.754  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [2] 002.754  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [2] 002.880  ***** Transition: Disconnected
+  [2] 003.020  ***** Transition: Disabled
+  [2] 003.480  ***** Transition: Disconnected
+  [2] 003.760  ***** Transition: Disabled
   [2] 003.814  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [2] 003.870  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [2] 004.231  INFO (1): Loop time of 0.02s overrun
+  [2] 004.260  ***** Transition: Disconnected
   [2] 004.293  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [2] 005.410  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [2] 005.449  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
   [2] 005.449  INFO (1): Loop time of 0.02s overrun
   [2] 005.449  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [2] 005.560  ***** Transition: Disabled
   [2] 006.431  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [2] 006.491  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [2] 006.928  INFO (1): Loop time of 0.02s overrun
@@ -246,15 +268,15 @@ Events:
   [2] 058.951  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [2] 059.911  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
   [2] 059.988  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [2] 407.000  ***** Transition: Autonomous
   [2] 412.113  ERROR (44000): FMS Auto Stop
+  [2] 412.260  ***** Transition: Disabled
+  [2] 432.040  ***** Transition: Teleop
+  [2] 446.940  ***** Transition: Disconnected
+  [2] 447.760  ***** Transition: Teleop
+  [2] 571.860  ***** Transition: Disabled
   [2] 573.577  ERROR (44000): ipconfig /release
+  [2] 573.680  ***** Transition: Disconnected
   [2] 574.066  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [2] 575.069  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
   [2] 576.872  ERROR (44005): FMS Disconnect
-
-Joysticks:
-  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
-  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  2: Controller (Gamepad F310) - 0 axes, 0 buttons, 0 POV
-  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
-  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV

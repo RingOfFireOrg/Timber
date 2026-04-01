@@ -9,10 +9,25 @@ Log Files:
   [1] 2026_03_29 11_27_59 Sun (Q65_1_)
   [2] 2026_03_29 11_31_57 Sun (Q65_2_)
 
+Joysticks:
+  0: Controller (Xbox One For Windows) - 0 axes, 0 buttons, 0 POV
+  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
+
+Telemetry:
+  Voltage: 7.73 - 12.79 V
+  CPU: 49 - 70%
+  CAN Utilization: 10 - 100%
+  Trip Time: 3.5 - 17.5 ms
+  Packet Loss: 0 - 44%
+
 Events:
   [1] 000.000  FMS Connected
   [1] 000.000  Code Start Notification
   [1] 000.065  ERROR (44003): FRC: No robot code is currently running.
+  [1] 000.080  ***** Transition: Disconnected
   [1] 000.267  WARNING (44007): FRC: Time since robot boot
   [1] 000.267  [phoenix] Signal Logger Started (Network: rio)
   [1] 000.267  [phoenix] Signal Logger Started (Network: EA381A4E394C4853202020500F0F18FF)
@@ -61,6 +76,7 @@ Events:
   [1] 000.267  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
   [1] 000.267  WARNING (1): [AdvantageKit] Failed to open output log file.
   [1] 000.469  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 000.480  ***** Transition: Disabled
   [1] 000.590  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
   [1] 000.590  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
   [1] 000.590  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
@@ -239,7 +255,16 @@ Events:
   [1] 057.331  Error at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:508): Could not find **any** PhotonVision coprocessors on NetworkTables. Double check that PhotonVision is running, and that your camera is connected!
   [1] 057.369  Warning at org.photonvision.PhotonCamera.verifyVersion(PhotonCamera.java:545): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
   [1] 057.369  INFO (1): PhotonVision coprocessor at path /photonvision/Photon_Front has not reported a message interface UUID - is your coprocessor's camera started?
+  [1] 166.180  ***** Transition: Autonomous
   [1] 168.527  ERROR (44000): FMS Auto Stop
+  [1] 168.560  ***** Transition: Disconnected
+  [1] 168.700  ***** Transition: Disabled
+  [1] 190.260  ***** Transition: Teleop
+  [1] 216.820  ***** Transition: Disconnected
+  [1] 217.400  ***** Transition: Teleop
+  [1] 221.440  ***** Transition: Disconnected
+  [1] 221.580  ***** Transition: Teleop
+  [1] 226.020  ***** Transition: Disconnected
   [1] 226.410  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [1] 227.611  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-GOOD,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
   [1] 228.011  ERROR (44000): Driver Station not keeping up with protocol rates
@@ -249,10 +274,3 @@ Events:
   [2] 001.027  ERROR (44000): Driver Station not keeping up with protocol rates
   [2] 020.921  ERROR (44000): Driver Station not keeping up with protocol rates (repeated 16x)
   [2] 023.751  ERROR (44005): FMS Disconnect
-
-Joysticks:
-  0: Controller (Xbox One For Windows) - 0 axes, 0 buttons, 0 POV
-  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
-  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
-  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV

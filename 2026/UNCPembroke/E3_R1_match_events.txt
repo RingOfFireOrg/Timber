@@ -10,10 +10,13 @@ NOTE: The robot does not appear to have participated in this match.
 Log Files:
   [1] 2026_03_29 13_41_30 Sun (E3_R1_1_)
 
+Joysticks:
+
+Telemetry:
+  No telemetry data available.
+
 Events:
   [1] 000.418  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
   [1] 000.619  FMS Connected
   [1] 003.633  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
   [1] 120.943  ERROR (44005): FMS Disconnect
-
-Joysticks:
