@@ -118,3 +118,18 @@ def test_parse_records_unsupported_version():
     data = struct.pack(">iqQ", 99, 0, 0)  # bad version
     records = list(parse_dslog_records(data))
     assert len(records) == 0
+
+
+def test_parse_dslog_path(tmp_path):
+    from dslog_parser import parse_dslog_path
+    data = make_dslog_file([
+        {"voltage_raw": 3072, "status": 0xFE},
+        {"voltage_raw": 3200, "status": 0xFD},
+    ])
+    path = tmp_path / "test.dslog"
+    path.write_bytes(data)
+    result = parse_dslog_path(str(path))
+    assert result["header"]["version"] == 4
+    assert len(result["records"]) == 2
+    assert result["records"][0]["mode"] == "Disabled"
+    assert result["records"][1]["mode"] == "Autonomous"

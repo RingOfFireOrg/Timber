@@ -105,3 +105,18 @@ def parse_dslog_records(data):
 
         offset += record_size
         index += 1
+
+
+def parse_dslog_path(filepath):
+    """Parse a .dslog file from a file path.
+
+    Returns dict with 'header' and 'records' keys.
+    Returns dict with None header and empty records if file is invalid.
+    """
+    with open(filepath, "rb") as f:
+        data = f.read()
+
+    header = parse_dslog_header(data)
+    records = list(parse_dslog_records(data))
+
+    return {"header": header, "records": records}
