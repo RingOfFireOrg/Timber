@@ -5,9 +5,15 @@ import argparse
 import os
 import sys
 
+# Ensure project root is on sys.path when run as a script
+_project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+for _p in [_project_root, os.path.join(_project_root, "match_processor"),
+           os.path.join(_project_root, "power_analyzer")]:
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
+
 from shared.dslog_parser import parse_dslog_records
 from shared.dsevents_parser import parse_dsevents_path
-from shared.event_formatter import format_events
 from dslog_processor import detect_transitions
 from dip_detector import detect_dips
 from profile_parser import parse_profile
@@ -81,11 +87,18 @@ def run_analysis(log_file, profile_path, voltage_threshold=10.0,
 
     if dsevents_path is not None:
         parsed_events = parse_dsevents_path(dsevents_path)
-        formatted_events = format_events(parsed_events)
+        header_ts = parsed_events["header"]["timestamp"]
+        raw_events = []
+        for event in parsed_events["events"]:
+            rel_seconds = event["timestamp"] - header_ts
+            rel_time = f"{abs(rel_seconds):07.3f}"
+            if rel_seconds < 0:
+                rel_time = f"-{rel_time}"
+            raw_events.append({"time": rel_time, "display": event["text"].strip()})
         transitions = detect_transitions(records)
         event_log = format_event_log(
             basename=basename,
-            events=formatted_events,
+            events=raw_events,
             transitions=transitions,
         )
         event_path = os.path.join(output_dir, f"{basename}_events.txt")

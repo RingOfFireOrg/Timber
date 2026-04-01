@@ -7,6 +7,11 @@ import re
 import sys
 from datetime import date
 
+# Ensure project root is on sys.path when run as a script
+_project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _project_root not in sys.path:
+    sys.path.insert(0, _project_root)
+
 from shared.dsevents_parser import parse_dsevents_path
 from match_identifier import (
     extract_fms_info,
