@@ -1,4 +1,8 @@
-"""Parse .dslog binary files: header and variable-length records."""
+"""Parse .dslog binary files: header and variable-length records.
+
+dslog format reverse-engineered by the FRC community.
+See also: AdvantageScope's DSLogReader.ts, dslog-reader, Orchid.
+"""
 
 import struct
 

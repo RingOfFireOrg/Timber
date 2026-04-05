@@ -1,4 +1,8 @@
-"""Decode per-channel currents from REV PDH and CTRE PDP data sections."""
+"""Decode per-channel currents from REV PDH and CTRE PDP data sections.
+
+PDH/PDP current encoding reverse-engineered by the FRC community.
+See also: AdvantageScope's DSLogReader.ts, dslog-reader, Orchid.
+"""
 
 # PD type constants
 PD_TYPE_REV = 0x21
