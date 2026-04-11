@@ -1,0 +1,58 @@
+Match: Qualification 30
+Event: NCCMP
+Field Time: 26/4/11 14:6:21
+DS Version: FRC Driver Station - Version 26.0
+Replay: 1
+The Blue Alliance: https://www.thebluealliance.com/match/NCCMP_qm30
+
+Log Files:
+  [1] 2026_04_11 10_06_20 Sat (Q30_1_)
+
+Joysticks:
+  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
+
+Telemetry:
+  Voltage: 8.07 - 12.62 V
+  CPU: 26 - 84%
+  CAN Utilization: 0 - 55%
+  Trip Time: 4.5 - 17.5 ms
+  Packet Loss: 0 - 36%
+
+Events:
+  [1] 000.000  FMS Connected
+  [1] 001.028  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 151.554  Code Start Notification
+  [1] 151.555  Code Start Notification (repeated 1x)
+  [1] 151.957  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 152.532  [phoenix] Signal Logger Started (Network: rio)
+  [1] 152.532  [phoenix] Signal Logger Started (Network: EA381A4E394C4853202020500F0F18FF)
+  [1] 152.532  WARNING (2): [Spark Max] IDs: 32, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 152.532  WARNING (2): [Spark Max] IDs: 32, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out (repeated 1x)
+  [1] 152.532  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
+  [1] 152.532  WARNING (1): [AdvantageKit] Failed to open output log file.
+  [1] 153.514  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] 153.549  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] 161.594  ERROR (44003): FRC: No robot code is currently running.
+  [1] 161.710  WARNING (2): [Spark Max] IDs: 50, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 161.774  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 161.774  INFO (1): Loop time of 0.02s overrun
+  [1] 162.360  ***** Transition: Disabled
+  [1] 163.131  INFO (1): Loop time of 0.02s overrun (repeated 1x)
+  [1] 163.191  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 163.718  WARNING (2): [Spark Flex] IDs: 20, [Spark Max] IDs: 31, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 165.471  INFO (1): Loop time of 0.02s overrun
+  [1] 165.550  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 235.100  ***** Transition: Autonomous
+  [1] 242.590  ERROR (44000): FMS Auto Stop
+  [1] 242.800  ***** Transition: Disabled
+  [1] 259.140  ***** Transition: Teleop
+  [1] 399.060  ***** Transition: Disabled
+  [1] 400.391  ERROR (44000): ipconfig /release
+  [1] 400.660  ***** Transition: Disconnected
+  [1] 400.831  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 401.833  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 403.640  ERROR (44005): FMS Disconnect

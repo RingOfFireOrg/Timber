@@ -1,0 +1,62 @@
+Match: Qualification 37
+Event: NCCMP
+Field Time: 26/4/11 15:11:34
+DS Version: FRC Driver Station - Version 26.0
+Replay: 1
+The Blue Alliance: https://www.thebluealliance.com/match/NCCMP_qm37
+
+Log Files:
+  [1] 2026_04_11 11_11_33 Sat (Q37_1_)
+
+Joysticks:
+  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
+
+Telemetry:
+  Voltage: 8.66 - 12.93 V
+  CPU: 24 - 86%
+  CAN Utilization: 0 - 88%
+  Trip Time: 4.0 - 8.5 ms
+  Packet Loss: 0 - 36%
+
+Events:
+  [1] 000.000  FMS Connected
+  [1] 002.307  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 159.709  Code Start Notification
+  [1] 159.710  Code Start Notification (repeated 1x)
+  [1] 160.110  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 161.634  WARNING (44007): FRC: Time since robot boot
+  [1] 161.634  [phoenix] Signal Logger Started (Network: rio)
+  [1] 161.634  [phoenix] Signal Logger Started (Network: EA381A4E394C4853202020500F0F18FF)
+  [1] 161.634  WARNING (2): [Spark Max] IDs: 32, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 161.634  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
+  [1] 161.634  WARNING (1): [AdvantageKit] Failed to open output log file.
+  [1] 161.833  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 162.248  ERROR (44004): FRC: The Driver Station has lost communication with the robot. (repeated 1x)
+  [1] 164.148  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] 164.148  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] 164.207  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-GOOD,  roboRIO(.2)-GOOD,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 168.754  ERROR (44003): FRC: No robot code is currently running.
+  [1] 168.888  WARNING (2): [Spark Flex] IDs: 20, [Spark Max] IDs: 50, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 168.949  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 168.949  INFO (1): Loop time of 0.02s overrun
+  [1] 169.340  ***** Transition: Disabled
+  [1] 170.166  INFO (1): Loop time of 0.02s overrun (repeated 1x)
+  [1] 170.226  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 171.053  WARNING (2): [Spark Max] IDs: 31, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 173.975  INFO (1): Loop time of 0.02s overrun
+  [1] 174.033  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 177.668  INFO (1): Loop time of 0.02s overrun
+  [1] 177.714  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 250.560  ***** Transition: Autonomous
+  [1] 270.880  ***** Transition: Disabled
+  [1] 274.820  ***** Transition: Teleop
+  [1] 415.340  ***** Transition: Disabled
+  [1] 416.267  ERROR (44000): ipconfig /release
+  [1] 416.540  ***** Transition: Disconnected
+  [1] 416.706  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 417.708  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 419.513  ERROR (44005): FMS Disconnect

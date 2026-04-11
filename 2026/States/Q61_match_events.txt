@@ -1,0 +1,178 @@
+Match: Qualification 61
+Event: NCCMP
+Field Time: 26/4/11 18:58:13
+DS Version: FRC Driver Station - Version 26.0
+Replay: 1
+The Blue Alliance: https://www.thebluealliance.com/match/NCCMP_qm61
+
+Log Files:
+  [1] 2026_04_11 14_58_11 Sat (Q61_1_)
+
+Joysticks:
+  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  2: Controller (Gamepad F310) - 0 axes, 0 buttons, 0 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
+
+Telemetry:
+  Voltage: 9.10 - 12.92 V
+  CPU: 44 - 76%
+  CAN Utilization: 0 - 100%
+  Trip Time: 5.5 - 11.0 ms
+  Packet Loss: 0 - 68%
+
+Events:
+  [1] 000.000  FMS Connected
+  [1] 001.828  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 135.231  Code Start Notification
+  [1] 135.232  Code Start Notification (repeated 1x)
+  [1] 135.432  [phoenix] Signal Logger Started (Network: rio)
+  [1] 135.432  [phoenix] Signal Logger Started (Network: EA381A4E394C4853202020500F0F18FF)
+  [1] 135.432  [phoenix] Signal Logger: Available disk space (60 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 135.432  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] 135.432  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] 135.432  WARNING (2): [Spark Max] IDs: 32, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 135.432  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
+  [1] 135.432  WARNING (1): [AdvantageKit] Failed to open output log file.
+  [1] 135.635  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 137.534  ERROR (44004): FRC: The Driver Station has lost communication with the robot. (repeated 1x)
+  [1] 138.536  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-GOOD,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 141.489  [phoenix] Signal Logger: Available disk space (59 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 141.489  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000112s
+  [1] 141.489  WARNING (2): [Spark Flex] IDs: 20, [Spark Max] IDs: 50, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 141.489  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 141.489  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 141.489  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 141.489  INFO (1): Loop time of 0.02s overrun
+  [1] 141.489  [phoenix] Signal Logger: Available disk space (59 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 141.489  ERROR (44003): FRC: No robot code is currently running.
+  [1] 141.540  ***** Transition: Disabled
+  [1] 141.613  INFO (1): Loop time of 0.02s overrun
+  [1] 141.648  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 142.153  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 142.153  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 142.274  WARNING (2): [Spark Max] IDs: 31, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 142.823  INFO (1): Loop time of 0.02s overrun
+  [1] 142.910  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 143.128  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 143.166  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 144.128  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 144.192  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 144.252  [phoenix] Signal Logger: Available disk space (59 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 145.134  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 145.187  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 145.420  ***** Transition: Disconnected
+  [1] 145.960  ***** Transition: Disabled
+  [1] 146.166  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
+  [1] 146.166  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 147.126  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
+  [1] 147.186  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 147.266  [phoenix] Signal Logger: Available disk space (59 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 148.137  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 148.187  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 149.528  INFO (1): Loop time of 0.02s overrun
+  [1] 149.588  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 150.167  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 150.167  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 150.292  [phoenix] Signal Logger: Available disk space (58 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 151.128  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 151.187  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 152.128  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 152.187  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 153.167  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 153.210  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 153.290  [phoenix] Signal Logger: Available disk space (58 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 154.166  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 154.226  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 155.181  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 155.248  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 156.212  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 156.249  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 156.308  [phoenix] Signal Logger: Available disk space (58 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 157.207  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 157.268  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 158.207  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 158.268  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 159.228  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 159.291  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 159.328  [phoenix] Signal Logger: Available disk space (58 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 161.249  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 161.290  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 162.272  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 162.330  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 162.371  [phoenix] Signal Logger: Available disk space (58 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 163.270  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 163.327  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 164.269  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 164.327  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 165.288  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 165.329  [phoenix] Signal Logger: Available disk space (57 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 165.329  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 166.290  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 166.348  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 167.292  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 167.367  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 168.328  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 168.371  [phoenix] Signal Logger: Available disk space (57 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 168.371  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 169.328  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 169.370  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 170.328  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 170.368  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 171.327  [phoenix] Signal Logger: Available disk space (57 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 171.390  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 171.390  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 172.349  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
+  [1] 172.412  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 173.366  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 173.406  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 174.354  [phoenix] Signal Logger: Available disk space (57 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 174.408  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 174.408  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 175.386  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in (repeated 1x)
+  [1] 175.449  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 176.412  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 176.468  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 177.333  [phoenix] Signal Logger: Available disk space (56 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 177.448  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 177.475  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 178.448  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 178.506  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 180.367  [phoenix] Signal Logger: Available disk space (56 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 180.489  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 180.528  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 182.486  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 182.549  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 183.368  [phoenix] Signal Logger: Available disk space (56 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 183.487  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 183.546  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 185.506  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 185.566  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 186.373  [phoenix] Signal Logger: Available disk space (56 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 186.546  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 186.572  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 187.548  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 187.588  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 188.567  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 188.628  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 189.369  [phoenix] Signal Logger: Available disk space (55 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 190.593  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 190.650  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 191.609  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 191.668  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 192.390  [phoenix] Signal Logger: Available disk space (55 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [1] 192.654  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 192.686  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 194.632  INFO (1): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 194.668  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 2 not available, check if controller is plugged in
+  [1] 234.500  ***** Transition: Autonomous
+  [1] 253.962  ERROR (44000): FMS Auto Stop
+  [1] 254.180  ***** Transition: Disabled
+  [1] 258.720  ***** Transition: Teleop
+  [1] 398.700  ***** Transition: Disabled
+  [1] 399.770  ERROR (44000): ipconfig /release
+  [1] 400.060  ***** Transition: Disconnected
+  [1] 400.220  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 401.222  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 403.024  ERROR (44005): FMS Disconnect

@@ -1,0 +1,21 @@
+Match: Qualification 29
+Event: NCCMP
+Field Time: 26/4/11 14:5:45
+DS Version: FRC Driver Station - Version 26.0
+Replay: 1
+The Blue Alliance: https://www.thebluealliance.com/match/NCCMP_qm29
+
+NOTE: The robot does not appear to have participated in this match.
+
+Log Files:
+  [1] 2026_04_11 10_05_43 Sat (Q29_1_)
+
+Joysticks:
+
+Telemetry:
+  No telemetry data available.
+
+Events:
+  [1] -000.001  FMS Connected
+  [1] 002.087  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 021.298  ERROR (44005): FMS Disconnect
