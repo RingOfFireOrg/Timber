@@ -1,6 +1,0 @@
-Power Dip Analysis: 2026_04_02 21_15_56 Thu
-Voltage Threshold: 9.5V
-Current Threshold: 1.0A
-Profile: power_profile.csv
-
-Summary: No voltage dips below 9.5V detected.

@@ -1,0 +1,13 @@
+Event Log: 2026_04_10 12_37_06 Fri
+
+000.000  FMS Connected:   Practice - 9:1, Field Time: 26/4/10 16:37:23
+ -- FRC Driver Station - Version 26.0
+000.000  ***** Transition: Disconnected
+000.214  <TagVersion>1 <time> 00.000 <count> 1 <flags> 2 <Code> 44002 <details> Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-bad FRC: Driver Station ping status has changed. <location> Driver Station <stack>
+001.222  Info roboRIO: Disk Free 221 MB, Memory Free 75 MB. DS Laptop: CPU 18% Batt 65%.
+002.226  <TagVersion>1 <time> 00.000 <count> 1 <flags> 2 <Code> 44002 <details> Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed. <location> Driver Station <stack>
+011.346  Info roboRIO: Disk Free 221 MB, Memory Free 75 MB. DS Laptop: CPU 12% Batt 65%.
+021.444  Info roboRIO: Disk Free 221 MB, Memory Free 75 MB. DS Laptop: CPU 27% Batt 65%.
+031.494  Info roboRIO: Disk Free 221 MB, Memory Free 75 MB. DS Laptop: CPU 12% Batt 65%.
+036.864  <TagVersion>1 <time> 00.000 <count> 1 <flags> 2 <Code> 44002 <details> Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed. <location> Driver Station <stack>
+037.494  <TagVersion>1 <time> 00.000 <count> 1 <flags> 2 <Code> 44005 <details> FMS Disconnect  <location> Driver Station <stack>
