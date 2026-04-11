@@ -1,0 +1,95 @@
+Match: Qualification 72
+Event: NCCMP
+Field Time: 26/4/11 20:35:32
+DS Version: FRC Driver Station - Version 26.0
+Replay: 1
+The Blue Alliance: https://www.thebluealliance.com/match/NCCMP_qm72
+
+Log Files:
+  [1] 2026_04_11 16_35_30 Sat (Q72_1_)
+
+Joysticks:
+  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  1: Controller (Gamepad F310) - 0 axes, 0 buttons, 0 POV
+  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
+
+Telemetry:
+  Voltage: 8.24 - 13.87 V
+  CPU: 44 - 86%
+  CAN Utilization: 0 - 68%
+  Trip Time: 1.0 - 11.5 ms
+  Packet Loss: 0 - 48%
+
+Events:
+  [1] 000.000  FMS Connected
+  [1] 002.429  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 111.439  Code Start Notification
+  [1] 111.445  Code Start Notification (repeated 2x)
+  [1] 111.460  ***** Transition: Disabled
+  [1] 111.620  ***** Transition: Disconnected
+  [1] 111.647  WARNING (2): [Spark Flex] IDs: 20, [Spark Max] IDs: 50, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 111.647  [phoenix] Signal Logger Started (Network: rio)
+  [1] 111.647  [phoenix] Signal Logger Started (Network: EA381A4E394C4853202020500F0F18FF)
+  [1] 111.647  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 111.647  INFO (1): Loop time of 0.02s overrun
+  [1] 111.647  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] 111.647  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [1] 111.647  WARNING (2): [Spark Max] IDs: 32, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [1] 111.647  WARNING (2): [Spark Max] IDs: 32, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out (repeated 1x)
+  [1] 111.647  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
+  [1] 111.647  WARNING (1): [AdvantageKit] Failed to open output log file.
+  [1] 111.847  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 112.036  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000130s
+  [1] 112.396  INFO (1): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 112.456  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 112.456  INFO (1): Loop time of 0.02s overrun
+  [1] 112.456  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 112.740  ***** Transition: Disabled
+  [1] 113.402  INFO (1): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 113.462  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 114.157  INFO (1): Loop time of 0.02s overrun
+  [1] 114.241  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 114.420  INFO (1): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 114.474  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 115.415  INFO (1): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 115.475  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 116.437  INFO (1): Loop time of 0.02s overrun
+  [1] 116.496  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 116.496  INFO (1): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 116.496  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 116.740  ***** Transition: Disconnected
+  [1] 116.937  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000055s
+  [1] 117.100  ***** Transition: Disabled
+  [1] 117.495  INFO (1): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 117.554  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 117.720  ***** Transition: Disconnected
+  [1] 117.980  ***** Transition: Disabled
+  [1] 118.498  INFO (1): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 118.535  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 119.497  INFO (1): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 119.535  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 120.515  INFO (1): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 120.575  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 121.537  INFO (1): Loop time of 0.02s overrun
+  [1] 121.578  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 121.578  INFO (1): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 121.578  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 122.534  INFO (1): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 122.596  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 123.536  INFO (1): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 123.596  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick Button 4 on port 1 not available, check if controller is plugged in
+  [1] 136.399  INFO (1): Loop time of 0.02s overrun
+  [1] 136.433  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [1] 248.080  ***** Transition: Autonomous
+  [1] 249.720  ***** Transition: Disconnected
+  [1] 250.360  ***** Transition: Autonomous
+  [1] 268.200  ***** Transition: Disabled
+  [1] 272.180  ***** Transition: Teleop
+  [1] 412.120  ***** Transition: Disabled
+  [1] 413.116  ERROR (44000): ipconfig /release
+  [1] 413.360  ***** Transition: Disconnected
+  [1] 413.558  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [1] 414.558  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 416.367  ERROR (44005): FMS Disconnect

@@ -1,0 +1,285 @@
+Power Dip Analysis: Q49_1_2026_04_11 13_13_21 Sat
+Voltage Threshold: 10.0V
+Current Threshold: 1.0A
+Profile: power_profile.csv
+
+=== Dip 1 at 347.360s — min 9.92V, lasted 0.0s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  39.0  |  4   | Swerve Drive RF
+    9  |  28.5  |  2   | Swerve Drive LF
+   12  |   6.6  |  40  | Turret
+   17  |  24.2  |  6   | Swerve Drive BL
+   19  |  39.4  |  8   | Swerve Drive BR
+   20  |   1.1  |  99  | Cancoders
+  Total: 138.9 A @ 9.92V
+
+=== Recovered at 347.380s — 10.2V ===
+
+=== Dip 2 at 353.640s — min 9.86V, lasted 0.0s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  18.9  |  4   | Swerve Drive RF
+    9  |  25.4  |  2   | Swerve Drive LF
+   10  |   1.2  |  31  | Spindexer
+   17  |  26.5  |  6   | Swerve Drive BL
+   19  |  22.8  |  8   | Swerve Drive BR
+   20  |   1.0  |  99  | Cancoders
+  Total: 95.8 A @ 9.86V
+
+=== Recovered at 353.660s — 10.0V ===
+
+=== Dip 3 at 357.080s — min 9.95V, lasted 0.1s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  24.6  |  4   | Swerve Drive RF
+    9  |  23.9  |  2   | Swerve Drive LF
+   17  |  21.0  |  6   | Swerve Drive BL
+   19  |  18.1  |  8   | Swerve Drive BR
+   20  |   1.0  |  99  | Cancoders
+  Total: 88.6 A @ 9.95V
+
+=== Recovered at 357.160s — 10.1V ===
+
+=== Dip 4 at 379.380s — min 9.95V, lasted 0.0s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  37.1  |  4   | Swerve Drive RF
+    9  |  21.0  |  2   | Swerve Drive LF
+   17  |  19.9  |  6   | Swerve Drive BL
+   19  |  21.2  |  8   | Swerve Drive BR
+   20  |   1.2  |  99  | Cancoders
+  Total: 100.4 A @ 9.95V
+
+=== Recovered at 379.400s — 10.0V ===
+
+=== Dip 5 at 386.140s — min 9.95V, lasted 0.0s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  25.4  |  4   | Swerve Drive RF
+    9  |  26.2  |  2   | Swerve Drive LF
+   17  |  19.9  |  6   | Swerve Drive BL
+   19  |  23.1  |  8   | Swerve Drive BR
+   20  |   1.3  |  99  | Cancoders
+  Total: 95.9 A @ 9.95V
+
+=== Recovered at 386.160s — 10.1V ===
+
+=== Dip 6 at 394.120s — min 9.83V, lasted 0.0s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  28.9  |  4   | Swerve Drive RF
+   17  |  27.8  |  6   | Swerve Drive BL
+   19  |  25.4  |  8   | Swerve Drive BR
+   20  |   1.1  |  99  | Cancoders
+  Total: 83.1 A @ 9.83V
+
+=== Recovered at 394.140s — 10.6V ===
+
+=== Dip 7 at 395.300s — min 9.96V, lasted 0.0s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  33.6  |  4   | Swerve Drive RF
+   11  |   1.6  |  32  | Indexer
+   17  |  34.6  |  6   | Swerve Drive BL
+   19  |  32.6  |  8   | Swerve Drive BR
+   20  |   1.0  |  99  | Cancoders
+  Total: 103.5 A @ 9.96V
+
+=== Recovered at 395.320s — 10.6V ===
+
+=== Dip 8 at 397.000s — min 9.82V, lasted 0.1s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  30.5  |  4   | Swerve Drive RF
+    9  |  29.1  |  2   | Swerve Drive LF
+   17  |  25.5  |  6   | Swerve Drive BL
+   19  |  29.8  |  8   | Swerve Drive BR
+   20  |   1.1  |  99  | Cancoders
+  Total: 115.9 A @ 9.82V
+
+=== Recovered at 397.140s — 10.7V ===
+
+=== Dip 9 at 399.960s — min 9.79V, lasted 0.0s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  34.5  |  4   | Swerve Drive RF
+    9  |  10.2  |  2   | Swerve Drive LF
+   12  |   2.6  |  40  | Turret
+   17  |  31.5  |  6   | Swerve Drive BL
+   19  |  10.1  |  8   | Swerve Drive BR
+   20  |   1.0  |  99  | Cancoders
+  Total: 90.0 A @ 9.79V
+
+=== Recovered at 400.000s — 10.1V ===
+
+=== Dip 10 at 415.240s — min 9.86V, lasted 0.0s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  13.1  |  4   | Swerve Drive RF
+    9  |  17.9  |  2   | Swerve Drive LF
+   17  |  16.5  |  6   | Swerve Drive BL
+   19  |  16.1  |  8   | Swerve Drive BR
+   20  |   1.1  |  99  | Cancoders
+   21  |   1.1  |  99  | VRM
+  Total: 65.8 A @ 9.86V
+
+=== Recovered at 415.260s — 10.0V ===
+
+=== Dip 11 at 419.900s — min 9.78V, lasted 0.0s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  31.5  |  4   | Swerve Drive RF
+    9  |  26.5  |  2   | Swerve Drive LF
+   17  |  22.2  |  6   | Swerve Drive BL
+   19  |  21.8  |  8   | Swerve Drive BR
+   20  |   1.1  |  99  | Cancoders
+  Total: 103.1 A @ 9.78V
+
+=== Recovered at 419.940s — 10.1V ===
+
+=== Dip 12 at 421.080s — min 9.93V, lasted 0.0s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  16.4  |  4   | Swerve Drive RF
+   10  |   4.1  |  31  | Spindexer
+   17  |  20.6  |  6   | Swerve Drive BL
+   19  |  20.8  |  8   | Swerve Drive BR
+   20  |   1.0  |  99  | Cancoders
+  Total: 62.9 A @ 9.93V
+
+=== Recovered at 421.100s — 10.3V ===
+
+=== Dip 13 at 424.960s — min 9.80V, lasted 0.0s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  32.4  |  4   | Swerve Drive RF
+    9  |  19.6  |  2   | Swerve Drive LF
+   17  |  16.6  |  6   | Swerve Drive BL
+   19  |  23.2  |  8   | Swerve Drive BR
+   20  |   1.0  |  99  | Cancoders
+  Total: 92.9 A @ 9.80V
+
+=== Recovered at 424.980s — 10.9V ===
+
+=== Dip 14 at 426.080s — min 9.85V, lasted 0.1s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  23.5  |  4   | Swerve Drive RF
+    9  |  25.5  |  2   | Swerve Drive LF
+   17  |  18.6  |  6   | Swerve Drive BL
+   19  |  21.4  |  8   | Swerve Drive BR
+   20  |   1.0  |  99  | Cancoders
+  Total: 90.0 A @ 9.85V
+
+=== Recovered at 426.140s — 10.0V ===
+
+=== Dip 15 at 433.700s — min 9.85V, lasted 0.1s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  28.2  |  4   | Swerve Drive RF
+    9  |  21.8  |  2   | Swerve Drive LF
+   17  |  21.8  |  6   | Swerve Drive BL
+   19  |  25.8  |  8   | Swerve Drive BR
+   20  |   1.1  |  99  | Cancoders
+  Total: 98.6 A @ 9.85V
+
+=== Recovered at 433.760s — 10.2V ===
+
+=== Dip 16 at 442.160s — min 9.80V, lasted 0.2s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  36.9  |  4   | Swerve Drive RF
+    5  |   1.1  |  21  | Intake Roller 1
+    9  |  34.8  |  2   | Swerve Drive LF
+   13  |   1.2  |  42  | Kraken 1
+   17  |  29.4  |  6   | Swerve Drive BL
+   19  |  29.9  |  8   | Swerve Drive BR
+   20  |   1.1  |  99  | Cancoders
+  Total: 134.4 A @ 9.80V
+
+=== Recovered at 442.360s — 10.2V ===
+
+=== Dip 17 at 449.940s — min 10.00V, lasted 0.0s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  23.8  |  4   | Swerve Drive RF
+    9  |  33.5  |  2   | Swerve Drive LF
+   17  |  22.4  |  6   | Swerve Drive BL
+   19  |  27.9  |  8   | Swerve Drive BR
+   20  |   1.1  |  99  | Cancoders
+  Total: 108.6 A @ 10.00V
+
+=== Recovered at 449.960s — 10.1V ===
+
+=== Dip 18 at 454.960s — min 9.67V, lasted 0.1s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  24.5  |  4   | Swerve Drive RF
+    1  |   1.6  |  3   | Swerve Turn RF
+    9  |  25.1  |  2   | Swerve Drive LF
+   17  |  21.5  |  6   | Swerve Drive BL
+   19  |  26.9  |  8   | Swerve Drive BR
+   20  |   1.1  |  99  | Cancoders
+  Total: 100.7 A @ 9.67V
+
+=== Recovered at 455.020s — 10.0V ===
+
+=== Dip 19 at 458.640s — min 9.79V, lasted 0.1s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  26.9  |  4   | Swerve Drive RF
+    9  |  23.5  |  2   | Swerve Drive LF
+   17  |  18.4  |  6   | Swerve Drive BL
+   19  |  22.6  |  8   | Swerve Drive BR
+   20  |   1.0  |  99  | Cancoders
+  Total: 92.4 A @ 9.79V
+
+=== Recovered at 458.700s — 10.1V ===
+
+=== Dip 20 at 463.440s — min 9.87V, lasted 0.1s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  34.2  |  4   | Swerve Drive RF
+    9  |  23.5  |  2   | Swerve Drive LF
+   17  |  20.8  |  6   | Swerve Drive BL
+   19  |  26.1  |  8   | Swerve Drive BR
+   20  |   1.2  |  99  | Cancoders
+  Total: 105.9 A @ 9.87V
+
+=== Recovered at 463.560s — 10.0V ===
+
+=== Dip 21 at 471.640s — min 9.93V, lasted 0.0s ===
+
+  Ch  | Peak A | CAN ID | Description
+  ----|--------|--------|------------------
+    0  |  27.2  |  4   | Swerve Drive RF
+   17  |  25.2  |  6   | Swerve Drive BL
+   19  |  32.0  |  8   | Swerve Drive BR
+   20  |   1.0  |  99  | Cancoders
+   21  |   1.0  |  99  | VRM
+  Total: 86.5 A @ 9.93V
+
+=== Recovered at 471.680s — 10.6V ===
+
+Summary: 21 dips detected, lowest voltage: 9.67V

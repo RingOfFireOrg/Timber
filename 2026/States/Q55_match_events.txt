@@ -1,0 +1,152 @@
+Match: Qualification 55
+Event: NCCMP
+Field Time: 26/4/11 18:3:37
+DS Version: FRC Driver Station - Version 26.0
+Replay: 1
+The Blue Alliance: https://www.thebluealliance.com/match/NCCMP_qm55
+
+Log Files:
+  [1] 2026_04_11 14_03_26 Sat (Q55_1_)
+  [2] 2026_04_11 14_05_47 Sat (Q55_2_)
+  [3] 2026_04_11 14_11_37 Sat (Q55_3_)
+
+Joysticks:
+  0: Controller (Xbox One For Windows) - 6 axes, 16 buttons, 1 POV
+  1: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  2: Controller (Gamepad F310) - 6 axes, 10 buttons, 1 POV
+  3: Logitech Dual Action - 0 axes, 0 buttons, 0 POV
+  4: Logitech Extreme 3D - 0 axes, 0 buttons, 0 POV
+
+Telemetry:
+  Voltage: 10.06 - 12.92 V
+  CPU: 42 - 70%
+  CAN Utilization: 0 - 80%
+  Trip Time: 1.0 - 28.5 ms
+  Packet Loss: 0 - 72%
+
+Events:
+  [1] 000.000  FMS Connected
+  [1] 002.033  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 138.002  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [1] 138.508  ERROR (44005): FMS Disconnect
+  [2] 000.000  FMS Connected
+  [2] 002.437  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [2] 040.288  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [2] 042.416  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [2] 046.682  Code Start Notification
+  [2] 046.686  Code Start Notification (repeated 1x)
+  [2] 046.780  ***** Transition: Disabled
+  [2] 046.844  ERROR (44003): FRC: No robot code is currently running.
+  [2] 047.040  ***** Transition: Disconnected
+  [2] 047.047  WARNING (44007): FRC: Time since robot boot
+  [2] 047.047  [phoenix] Signal Logger Started (Network: rio)
+  [2] 047.047  [phoenix] Signal Logger Started (Network: EA381A4E394C4853202020500F0F18FF)
+  [2] 047.047  [phoenix] Signal Logger: Available disk space (67 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [2] 047.047  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [2] 047.047  INFO (1): Loop time of 0.02s overrun
+  [2] 047.047  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [2] 047.047  INFO (1): Loop time of 0.02s overrun
+  [2] 047.047  Warning at edu.wpi.first.wpilibj.Tracer.lambda$printEpochs$0(Tracer.java:62): 	Turret.periodic(): 0.000074s
+  [2] 047.047  WARNING (2): [Spark Flex] IDs: 20, [Spark Max] IDs: 50, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [2] 047.047  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [2] 047.047  INFO (1): Loop time of 0.02s overrun
+  [2] 047.047  Warning at edu.wpi.first.wpilibj.DriverStation.reportJoystickUnpluggedWarning(DriverStation.java:1345): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  INFO (1): Joystick POV 0 on port 0 not available, check if controller is plugged in
+  [2] 047.047  WARNING (2): [Spark Max] IDs: 32, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [2] 047.047  WARNING (2): [Spark Max] IDs: 32, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out (repeated 1x)
+  [2] 047.047  Error at org.littletonrobotics.junction.wpilog.WPILOGWriter.start(WPILOGWriter.java:149): [AdvantageKit] Failed to open output log file.
+  [2] 047.047  WARNING (1): [AdvantageKit] Failed to open output log file.
+  [2] 047.248  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [2] 047.440  ***** Transition: Disabled
+  [2] 049.700  [phoenix] Signal Logger: Available disk space (67 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [2] 052.726  [phoenix] Signal Logger: Available disk space (67 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [2] 055.728  [phoenix] Signal Logger: Available disk space (66 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [2] 067.767  [phoenix] Signal Logger: Available disk space (66 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 4x)
+  [2] 070.762  [phoenix] Signal Logger: Available disk space (65 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [2] 082.803  [phoenix] Signal Logger: Available disk space (65 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 4x)
+  [2] 085.819  [phoenix] Signal Logger: Available disk space (64 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [2] 097.847  [phoenix] Signal Logger: Available disk space (64 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 4x)
+  [2] 100.863  [phoenix] Signal Logger: Available disk space (63 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [2] 103.853  [phoenix] Signal Logger: Available disk space (63 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [2] 325.560  ***** Transition: Disconnected
+  [2] 325.766  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [2] 326.768  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [2] 327.978  ERROR (44005): FMS Disconnect
+  [3] 000.000  FMS Connected
+  [3] 000.057  ERROR (44003): FRC: No robot code is currently running.
+  [3] 000.140  ***** Transition: Disconnected
+  [3] 000.260  ***** Transition: Disabled
+  [3] 000.383  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [3] 000.430  [phoenix] Signal Logger: Available disk space (82 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 000.430  [phoenix] Signal Logger: Available disk space (83 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 000.430  [phoenix] Signal Logger: Available disk space (83 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 2x)
+  [3] 000.450  [phoenix] Signal Logger: Available disk space (82 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 000.450  [phoenix] Signal Logger: Available disk space (82 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 2x)
+  [3] 001.980  ***** Transition: Disconnected
+  [3] 002.377  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [3] 002.380  ***** Transition: Disabled
+  [3] 002.700  ***** Transition: Disconnected
+  [3] 002.900  ***** Transition: Disabled
+  [3] 003.082  ERROR (44004): FRC: The Driver Station has lost communication with the robot. (repeated 1x)
+  [3] 003.488  [phoenix] Signal Logger: Available disk space (82 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 006.529  [phoenix] Signal Logger: Available disk space (81 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 009.488  [phoenix] Signal Logger: Available disk space (81 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [3] 011.040  ***** Transition: Disconnected
+  [3] 011.220  ***** Transition: Disabled
+  [3] 011.383  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [3] 011.400  ***** Transition: Disconnected
+  [3] 011.784  ERROR (44004): FRC: The Driver Station has lost communication with the robot. (repeated 1x)
+  [3] 013.588  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-GOOD,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [3] 025.360  ***** Transition: Disabled
+  [3] 025.520  ***** Transition: Disconnected
+  [3] 025.911  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [3] 026.520  ***** Transition: Disabled
+  [3] 026.630  ERROR (44003): FRC: No robot code is currently running.
+  [3] 029.037  [phoenix] Signal Logger: Available disk space (80 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 029.037  [phoenix] Signal Logger: Available disk space (80 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 1x)
+  [3] 029.037  [phoenix] Signal Logger: Available disk space (81 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 029.049  [phoenix] Signal Logger: Available disk space (80 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 033.891  [phoenix] Signal Logger: Available disk space (80 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 2x)
+  [3] 036.872  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 042.870  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 2x)
+  [3] 043.040  ***** Transition: Autonomous
+  [3] 044.776  Warning at edu.wpi.first.wpilibj.IterativeRobotBase.printLoopOverrunMessage(IterativeRobotBase.java:436): Loop time of 0.02s overrun
+  [3] 044.776  INFO (1): Loop time of 0.02s overrun
+  [3] 045.850  [phoenix] Signal Logger: Available disk space (79 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 048.451  ERROR (44000): FMS Auto Stop
+  [3] 048.740  ***** Transition: Disabled
+  [3] 048.850  [phoenix] Signal Logger: Available disk space (78 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 060.893  [phoenix] Signal Logger: Available disk space (78 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 4x)
+  [3] 063.940  [phoenix] Signal Logger: Available disk space (77 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 068.500  ***** Transition: Teleop
+  [3] 069.913  [phoenix] Signal Logger: Available disk space (77 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 2x)
+  [3] 072.208  WARNING (2): [Spark Max] IDs: 40, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [3] 072.931  [phoenix] Signal Logger: Available disk space (77 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 074.168  WARNING (2): [Spark Max] IDs: 40, timed out while waiting for Period Status 2: HAL: CAN Receive has Timed Out
+  [3] 075.934  [phoenix] Signal Logger: Available disk space (77 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 078.930  [phoenix] Signal Logger: Available disk space (76 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs.
+  [3] 084.969  [phoenix] Signal Logger: Available disk space (76 MB) is low; at 50 MB, old hoot logs will be deleted. Use Tuner X to download and delete hoot logs. (repeated 2x)
+  [3] 131.940  ***** Transition: Disconnected
+  [3] 132.420  ***** Transition: Teleop
+  [3] 191.252  ERROR (44000): FMS Emergency Stop
+  [3] 191.300  ***** Transition: Disabled
+  [3] 230.680  ***** Transition: Disconnected
+  [3] 231.050  ERROR (44004): FRC: The Driver Station has lost communication with the robot.
+  [3] 232.052  ERROR (44002): Ping Results:  link-bad,  DS radio(.4)-bad,  robot radio(.1)-bad,  roboRIO(.2)-bad,  FMS-GOOD FRC: Driver Station ping status has changed.
+  [3] 233.257  ERROR (44005): FMS Disconnect
